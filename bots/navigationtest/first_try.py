@@ -35,7 +35,7 @@ while True:
 
     for ship in me.get_ships():
         if True:
-            command_queue.append(ship.move(navigator.navigate_to(ship.position, me.shipyard.position)))
+            command_queue.append(ship.move(navigator.navigate_to(ship.position, Position(0, 0))))
         else:
             command_queue.append(ship.stay_still())
 
