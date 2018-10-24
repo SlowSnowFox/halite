@@ -1,9 +1,9 @@
 class Heuristic:
 
-    def __init__(self, distance, time_discount, gmap):
+    def __init__(self, distance, time_discount, nmap):
         self.distance = distance
         self.time_discount = time_discount
-        self.gmap = gmap
+        self.gmap = nmap
 
     def __call__(self, p1, p2, dirt=None):
         return self.distance(p1, p2, self.gmap)

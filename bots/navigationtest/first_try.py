@@ -28,7 +28,7 @@ while True:
     game.update_frame()
     me = game.me
     game_map = game.game_map
-    hr = Heuristic(HeuristicFunctions.distance_naive, lambda x: x, game_map)
+    hr = Heuristic(HeuristicFunctions.distance_cost_adjusted, lambda x: x, game_map)
     navigator = Navigator(game_map, me, hr)
 
     command_queue = []

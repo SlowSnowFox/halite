@@ -15,6 +15,7 @@ class Navigator:
         self.dropoffs = me.get_dropoffs() + [self.me.shipyard]
         self.mpan = MapAnalyzer(gmap)
         self.heuristic = heuristic
+        self.heuristic.gmap = self.mpan.graph
 
     def navigate_to(self, source, target):
         if source == target:
@@ -39,6 +40,7 @@ class MapAnalyzer:
     def __init__(self, gamemap):
         self.gmap = gamemap
         self.graph = self.map_to_networkx()
+        self.matrix = self.map_to_np()
 
     def find_global_best_spots(self):
         pass
@@ -60,6 +62,10 @@ class MapAnalyzer:
         g.add_edges_from(edges)
         nx.set_node_attributes(g, nodes, name="halite")
         return g
+
+    def map_to_np(self):
+
+        return 1
 
     def update_graph(self):
         pass
