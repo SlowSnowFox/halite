@@ -37,17 +37,17 @@ while True:
 
     for ship in me.get_ships():
         if ship.halite_amount > RETURNTOBASE:
-            command_queue.append(ship.move(navigator.go_dropoff(ship)))
+            command_queue.append(ship.move(navigator.go_to_closest_dropoff(ship)))
         elif game_map[ship.position].halite_amount < constants.MAX_HALITE / 10:
             command_queue.append(
                 ship.move(
-                    random.choice([ Direction.North, Direction.South, Direction.East, Direction.West ])))
+                    random.choice([Direction.North, Direction.South, Direction.East, Direction.West])))
         else:
             command_queue.append(ship.stay_still())
 
     # If the game is in the first 200 turns and you have enough halite, spawn a ship.
     # Don't spawn a ship if you currently have a ship at port, though - the ships will collide.
-    if game.turn_number <= 200 and me.halite_amount >= constants.SHIP_COST and not game_map[me.shipyard].is_occupied:
+    if game.turn_number <= 200 and me.halite_amount >= (constants.SHIP_COST + 2000) and not game_map[me.shipyard].is_occupied:
         command_queue.append(me.shipyard.spawn())
 
     # Send your moves back to the game environment, ending this turn.
