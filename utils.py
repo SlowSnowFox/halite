@@ -8,11 +8,11 @@ import networkx as nx
 
 class Navigator:
 
-    def __init__(self, gmap, me, mpan):
+    def __init__(self, gmap, me):
         self.gmap = gmap
         self.me = me
         self.dropoffs = me.get_dropoffs()
-        self.mpan = mpan
+        self.mpan = MapAnalyzer(gmap)
 
     def go_to_closest_dropoff(self, ship, heuristic="naive"):
         nearest_dropoff = self.get_closest_dropoff(ship.position, heuristic)
