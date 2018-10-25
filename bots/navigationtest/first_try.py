@@ -6,10 +6,8 @@ sys.path.insert(0, "/home/norm/Documents/halite/halite/")
 from bots.navigationtest.hyperparameter import *
 from utils.utils import *
 from utils.heuristic import *
-
-
-#import logging
-
+import logging
+#logging.basicConfig(filename="bot.log", level=logging.INFO)
 
 """ <<<Game Begin>>> """
 
@@ -28,17 +26,20 @@ while True:
     game.update_frame()
     me = game.me
     game_map = game.game_map
-    hr = Heuristic(HeuristicFunctions.distance_cost_adjusted, lambda x: x, game_map)
-    navigator = Navigator(game_map, me, hr)
+    hr = Heuristic(HeuristicFunctions.distance_cost_adjusted, game_map)
+    khr = KernelHeuristic(KernelHeuristicFunctions.absolute_sum, size=0)
+    mpan = MapAnalyzer(game_map, khr)
+    navigator = Navigator(game_map, me, hr, mpan)
 
     command_queue = []
 
     for ship in me.get_ships():
+        next_command = ship.stay_still()
         if True:
-            command_queue.append(ship.move(navigator.navigate_to(ship.position, Position(0, 0))))
-        else:
-            command_queue.append(ship.stay_still())
+            closest_honey_spot = navigator.get_closest_off(ship.position, hr, mpan.honey_spots)
+            next_command = ship.move(navigator.navigate_to(ship.position, closest_honey_spot.position))
 
+        command_queue.append(next_command)
     if game.turn_number <= BUILDTIME and me.halite_amount >= (constants.SHIP_COST + RESERVE) and not game_map[me.shipyard].is_occupied:
         command_queue.append(me.shipyard.spawn())
 

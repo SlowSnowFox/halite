@@ -3,17 +3,18 @@ from hlt import constants
 from hlt.positionals import Direction, Position
 import numpy as np
 import networkx as nx
-
+from itertools import product
+import logging
 # TODO if needed replace gmap.naive_navigate with a implementation that prioritizes ships with higher cargo
 
 
 class Navigator:
 
-    def __init__(self, gmap, me, heuristic):
+    def __init__(self, gmap, me, heuristic, mpan):
         self.gmap = gmap
         self.me = me
         self.dropoffs = me.get_dropoffs() + [self.me.shipyard]
-        self.mpan = MapAnalyzer(gmap)
+        self.mpan = mpan
         self.heuristic = heuristic
         self.heuristic.gmap = self.mpan.graph
 
@@ -28,22 +29,26 @@ class Navigator:
         source.position = source  # needed because naive navigate only takes ships and not positions as first input
         return self.gmap.naive_navigate(source, save_target)
 
-    def get_closest_off(self, p2, heuristic, elements):
-        positions = 1
+    def get_closest_off(self, source, heuristic, elements):
+        elements = [PositionConvertible.from_position(x.position) for x in elements]
+        source = PositionConvertible.from_position(source)
         if elements:
-                return max(elements, lambda x: nx.shortest_path_length(self.gmap, p2.node, x.node, heuristic))
+            target = max(elements, key=lambda x: nx.shortest_path_length(self.mpan.graph,
+                                                                       source=x.node,
+                                                                       target=source.node,
+                                                                       weight=heuristic))
+            logging.info(f"got best node {target.node}")
+            return target
         return None
 
 
 class MapAnalyzer:
 
-    def __init__(self, gamemap):
+    def __init__(self, gamemap, kernelheuristic):
+        self.kernelheuristic = kernelheuristic
         self.gmap = gamemap
         self.graph = self.map_to_networkx()
-        self.matrix = self.map_to_np()
-
-    def find_global_best_spots(self):
-        pass
+        self.honey_spots = self.find_honey_spots()
 
     def map_to_networkx(self):
         height = self.gmap.height
@@ -63,15 +68,27 @@ class MapAnalyzer:
         nx.set_node_attributes(g, nodes, name="halite")
         return g
 
-    def map_to_np(self):
-
-        return 1
+    def find_honey_spots(self):
+        height = self.gmap.height
+        width = self.gmap.width
+        h_spots = []
+        for y in range(height):
+            for x in range(width):
+                pc = PositionConvertible.from_coordinates(x, y)
+                sg = self.graph.subgraph(self.get_neighbourgraph(pc))
+                h_spots.append(Kernel(pc, self.kernelheuristic(sg)))
+        # TODO further evaluation of hotspots do something with overlapping regions
+        return sorted(h_spots, key=lambda kernel: kernel.attractiveness, reverse=True)[0:1]
 
     def update_graph(self):
         pass
 
-    def identify_dropoffs(self):
-        pass
+    def get_neighbourgraph(self, pc):
+        surr = set()
+        for absoffset in range(self.kernelheuristic.size+1):
+            for cell in product([0, -absoffset, absoffset], [0, -absoffset, absoffset]):
+                surr.add(PositionConvertible.from_position(self.gmap.normalize(pc.position.directional_offset(cell))).node)
+        return surr
 
 
 class PositionConvertible:
@@ -104,12 +121,13 @@ class PositionConvertible:
         return f'{pad_zeros}{self.x}, {self.y}'
 
 
-class Region:
+class Kernel:
 
-    def __init__(self, position1, position2):
-        self.upper_x = position1.x
-        self.upper_y = position1.y
+    def __init__(self, core: PositionConvertible, attractiveness):
+        self.attractiveness = attractiveness
+        self.core = core
+        self.nodes = None
 
-    def something(self):
-        pass
-
+    @property
+    def position(self):
+        return self.core.position

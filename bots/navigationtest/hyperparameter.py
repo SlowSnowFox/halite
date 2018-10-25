@@ -1,7 +1,7 @@
 # Direct Gameplay values
 MAXCARRY = 1000  # Maximum amount of halite a ship can carry
 RETURNTOBASE = 500  # Halite amount a ship needs after return to base is initialized
-RESERVE = 1000  # If Halite Amount drops below the threshold no new ships are build
+RESERVE = 3000  # If Halite Amount drops below the threshold no new ships are build
 BUILDTIME = 200  # Number of turns the agents considers to build new ships
 
 # Region attractiveness parameters
