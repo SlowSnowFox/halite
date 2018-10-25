@@ -35,10 +35,14 @@ while True:
 
     for ship in me.get_ships():
         next_command = ship.stay_still()
-        if True:
-            closest_honey_spot = navigator.get_closest_off(ship.position, hr, mpan.honey_spots)
+        if ship.halite_amount > 600:
+            closest_dropoff = navigator.get_closest_off(ship.position, hr, navigator.dropoffs)
+            next_command = ship.move(navigator.navigate_to(ship.position, closest_dropoff.position))
+        elif game_map[ship.position].halite_amount > 400:
+            next_command = ship.stay_still()
+        else:
+            closest_honey_spot = navigator.get_closest_off(ship.position, hr, mpan.honey_spots[:TOPNSPOTS])
             next_command = ship.move(navigator.navigate_to(ship.position, closest_honey_spot.position))
-
         command_queue.append(next_command)
     if game.turn_number <= BUILDTIME and me.halite_amount >= (constants.SHIP_COST + RESERVE) and not game_map[me.shipyard].is_occupied:
         command_queue.append(me.shipyard.spawn())

@@ -78,7 +78,7 @@ class MapAnalyzer:
                 sg = self.graph.subgraph(self.get_neighbourgraph(pc))
                 h_spots.append(Kernel(pc, self.kernelheuristic(sg)))
         # TODO further evaluation of hotspots do something with overlapping regions
-        return sorted(h_spots, key=lambda kernel: kernel.attractiveness, reverse=True)[0:1]
+        return sorted(h_spots, key=lambda kernel: kernel.attractiveness, reverse=True)
 
     def update_graph(self):
         pass
