@@ -90,6 +90,9 @@ class MapAnalyzer:
                 surr.add(PositionConvertible.from_position(self.gmap.normalize(pc.position.directional_offset(cell))).node)
         return surr
 
+    def spanning_tree(self, kernel):
+        return None
+
 
 class PositionConvertible:
 
@@ -124,10 +127,19 @@ class PositionConvertible:
 class Kernel:
 
     def __init__(self, core: PositionConvertible, attractiveness):
-        self.attractiveness = attractiveness
+        self._attractiveness = attractiveness
         self.core = core
+        self.ship_id = None
         self.nodes = None
 
     @property
     def position(self):
         return self.core.position
+
+    @property
+    def node(self):
+        return self.core.node
+
+    @property
+    def attractiveness(self):
+        return self._attractiveness
