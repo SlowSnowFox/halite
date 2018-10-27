@@ -41,6 +41,18 @@ class Navigator:
             return target
         return None
 
+    def farm_environment(self, ship):
+        pc = PositionConvertible.from_position(ship.position)
+        env = self.mpan.get_neighbourgraph(pc)
+        graph = self.mpan.path_subgraph(env)
+        # parse graph and build in farming stops
+        return None
+
+    def eval_environment(self, ship):
+        pc = PositionConvertible.from_position(ship.position)
+        env = self.mpan.get_neighbourgraph(pc)
+        return self.mpan.kernelheuristic(env)
+
 
 class MapAnalyzer:
 
@@ -90,8 +102,11 @@ class MapAnalyzer:
                 surr.add(PositionConvertible.from_position(self.gmap.normalize(pc.position.directional_offset(cell))).node)
         return surr
 
-    def spanning_tree(self, kernel):
-        return None
+    def path_subgraph(self, graph):
+        # fill in edges with weights
+        # get top 4 vertices
+        # create a steiner Tree connecting the top 4
+        return 1
 
 
 class PositionConvertible:
