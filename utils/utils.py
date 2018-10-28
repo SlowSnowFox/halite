@@ -23,6 +23,7 @@ class Navigator:
             return 'o'
         start = PositionConvertible.from_position(source)
         end = PositionConvertible.from_position(target)
+        logging.info(f"Path Requested from {start.node} to {end.node}")
         path = nx.dijkstra_path(self.mpan.graph, start.node, end.node, self.heuristic)
         return path
 
