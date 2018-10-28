@@ -24,10 +24,7 @@ class Navigator:
         start = PositionConvertible.from_position(source)
         end = PositionConvertible.from_position(target)
         path = nx.dijkstra_path(self.mpan.graph, start.node, end.node, self.heuristic)
-        next_step = PositionConvertible.from_node(path[1])
-        save_target = next_step.position
-        source.position = source  # needed because naive navigate only takes ships and not positions as first input
-        return self.gmap.naive_navigate(source, save_target)
+        return path
 
     def get_closest_off(self, source, heuristic, elements):
         elements = [PositionConvertible.from_position(x.position) for x in elements]
@@ -51,7 +48,8 @@ class Navigator:
     def eval_environment(self, ship):
         pc = PositionConvertible.from_position(ship.position)
         env = self.mpan.get_neighbourgraph(pc)
-        return self.mpan.kernelheuristic(env)
+        genv = self.mpan.graph.subgraph(env)
+        return self.mpan.kernelheuristic(genv)
 
 
 class MapAnalyzer:

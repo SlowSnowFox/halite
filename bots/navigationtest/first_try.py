@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Python 3.6
-from .botinterface import *
+from botinterface import *
 
 game = hlt.Game()
 rand = random.Random()

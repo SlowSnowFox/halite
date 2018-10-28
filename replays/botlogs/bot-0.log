@@ -1,435 +1,2179 @@
 INFO:root:=============== TURN 001 ================
 INFO:root:=============== TURN 002 ================
+INFO:root:got best node 019, 12
+INFO:root:0 will move to position 008, 15
+INFO:root:{'008, 15'} current status
 INFO:root:=============== TURN 003 ================
+INFO:root:0 wanted to move to 008, 14 but could not because of False fuel and True
 INFO:root:=============== TURN 004 ================
+INFO:root:got best node 019, 12
+INFO:root:1 will move to position 008, 15
+INFO:root:{'008, 15'} current status
+INFO:root:0 will move to position 008, 14
+INFO:root:{'008, 14', '008, 15'} current status
 INFO:root:=============== TURN 005 ================
+INFO:root:1 wanted to move to 008, 14 but could not because of False fuel and True
+INFO:root:0 will move to position 008, 13
+INFO:root:{'008, 13', '008, 15'} current status
 INFO:root:=============== TURN 006 ================
+INFO:root:got best node 019, 12
+INFO:root:2 will move to position 008, 15
+INFO:root:{'008, 15'} current status
+INFO:root:1 will move to position 008, 14
+INFO:root:{'008, 14', '008, 15'} current status
+INFO:root:0 will move to position 008, 12
+INFO:root:{'008, 12', '008, 14', '008, 15'} current status
 INFO:root:=============== TURN 007 ================
+INFO:root:1 will move to position 008, 13
+INFO:root:{'008, 13'} current status
+INFO:root:0 will move to position 008, 11
+INFO:root:{'008, 13', '008, 11'} current status
+INFO:root:2 wanted to move to 008, 14 but could not because of False fuel and True
 INFO:root:=============== TURN 008 ================
+INFO:root:1 will move to position 008, 12
+INFO:root:{'008, 12'} current status
+INFO:root:0 will move to position 008, 10
+INFO:root:{'008, 12', '008, 10'} current status
+INFO:root:2 will move to position 008, 14
+INFO:root:{'008, 12', '008, 14', '008, 10'} current status
 INFO:root:=============== TURN 009 ================
+INFO:root:0 will move to position 008, 9
+INFO:root:{'008, 9'} current status
+INFO:root:1 will move to position 008, 11
+INFO:root:{'008, 9', '008, 11'} current status
+INFO:root:2 will move to position 008, 13
+INFO:root:{'008, 13', '008, 9', '008, 11'} current status
 INFO:root:=============== TURN 010 ================
+INFO:root:1 wanted to move to 008, 10 but could not because of False fuel and True
+INFO:root:2 will move to position 008, 12
+INFO:root:{'008, 12', '008, 11'} current status
+INFO:root:0 wanted to move to 008, 8 but could not because of False fuel and True
 INFO:root:=============== TURN 011 ================
+INFO:root:2 wanted to move to 008, 11 but could not because of False fuel and True
+INFO:root:1 will move to position 008, 10
+INFO:root:{'008, 12', '008, 10'} current status
+INFO:root:0 will move to position 008, 8
+INFO:root:{'008, 12', '008, 8', '008, 10'} current status
 INFO:root:=============== TURN 012 ================
+INFO:root:1 will move to position 008, 9
+INFO:root:{'008, 9'} current status
+INFO:root:0 will move to position 008, 7
+INFO:root:{'008, 7', '008, 9'} current status
+INFO:root:2 will move to position 008, 11
+INFO:root:{'008, 7', '008, 9', '008, 11'} current status
 INFO:root:=============== TURN 013 ================
+INFO:root:0 will move to position 008, 6
+INFO:root:{'008, 6'} current status
+INFO:root:1 wanted to move to 008, 8 but could not because of False fuel and True
+INFO:root:2 will move to position 008, 10
+INFO:root:{'008, 9', '008, 6', '008, 10'} current status
 INFO:root:=============== TURN 014 ================
+INFO:root:0 will move to position 008, 5
+INFO:root:{'008, 5'} current status
+INFO:root:2 wanted to move to 008, 9 but could not because of False fuel and True
+INFO:root:1 will move to position 008, 8
+INFO:root:{'008, 8', '008, 5', '008, 10'} current status
 INFO:root:=============== TURN 015 ================
+INFO:root:0 wanted to move to 008, 4 but could not because of False fuel and True
+INFO:root:1 will move to position 008, 7
+INFO:root:{'008, 7', '008, 5'} current status
+INFO:root:2 will move to position 008, 9
+INFO:root:{'008, 7', '008, 5', '008, 9'} current status
 INFO:root:=============== TURN 016 ================
+INFO:root:1 will move to position 008, 6
+INFO:root:{'008, 6'} current status
+INFO:root:2 will move to position 008, 8
+INFO:root:{'008, 8', '008, 6'} current status
+INFO:root:0 will move to position 008, 4
+INFO:root:{'008, 8', '008, 4', '008, 6'} current status
 INFO:root:=============== TURN 017 ================
-INFO:root:got best node 008, 16
+INFO:root:2 wanted to move to 008, 7 but could not because of False fuel and True
+INFO:root:1 will move to position 008, 5
+INFO:root:{'008, 8', '008, 5'} current status
+INFO:root:0 will move to position 007, 4
+INFO:root:{'008, 8', '008, 5', '007, 4'} current status
 INFO:root:=============== TURN 018 ================
-INFO:root:got best node 008, 16
+INFO:root:1 will move to position 008, 4
+INFO:root:{'008, 4'} current status
+INFO:root:0 will move to position 007, 3
+INFO:root:{'008, 4', '007, 3'} current status
+INFO:root:2 will move to position 008, 7
+INFO:root:{'008, 7', '008, 4', '007, 3'} current status
 INFO:root:=============== TURN 019 ================
-INFO:root:got best node 008, 16
+INFO:root:0 will move to position 007, 2
+INFO:root:{'007, 2'} current status
+INFO:root:1 wanted to move to 007, 4 but could not because of False fuel and True
+INFO:root:2 will move to position 008, 6
+INFO:root:{'008, 4', '008, 6', '007, 2'} current status
 INFO:root:=============== TURN 020 ================
+INFO:root:0 will move to position 006, 2
+INFO:root:{'006, 2'} current status
+INFO:root:2 will move to position 008, 5
+INFO:root:{'008, 5', '006, 2'} current status
+INFO:root:1 will move to position 007, 4
+INFO:root:{'008, 5', '006, 2', '007, 4'} current status
 INFO:root:=============== TURN 021 ================
+INFO:root:2 will move to position 008, 4
+INFO:root:{'008, 4'} current status
+INFO:root:0 will move to position 006, 1
+INFO:root:{'006, 1', '008, 4'} current status
+INFO:root:1 will move to position 007, 3
+INFO:root:{'006, 1', '008, 4', '007, 3'} current status
 INFO:root:=============== TURN 022 ================
+INFO:root:0 will move to position 006, 0
+INFO:root:{'006, 0'} current status
+INFO:root:2 wanted to move to 007, 4 but could not because of False fuel and True
+INFO:root:1 will move to position 007, 2
+INFO:root:{'006, 0', '008, 4', '007, 2'} current status
 INFO:root:=============== TURN 023 ================
+INFO:root:0 will move to position 007, 0
+INFO:root:{'007, 0'} current status
+INFO:root:1 will move to position 006, 2
+INFO:root:{'007, 0', '006, 2'} current status
+INFO:root:2 will move to position 007, 4
+INFO:root:{'007, 4', '007, 0', '006, 2'} current status
 INFO:root:=============== TURN 024 ================
+INFO:root:1 will move to position 006, 1
+INFO:root:{'006, 1'} current status
+INFO:root:2 will move to position 007, 3
+INFO:root:{'006, 1', '007, 3'} current status
+INFO:root:0 will move to position 008, 0
+INFO:root:{'008, 0', '006, 1', '007, 3'} current status
 INFO:root:=============== TURN 025 ================
+INFO:root:2 will move to position 007, 2
+INFO:root:{'007, 2'} current status
+INFO:root:1 will move to position 006, 0
+INFO:root:{'006, 0', '007, 2'} current status
+INFO:root:0 will move to position 009, 0
+INFO:root:{'006, 0', '009, 0', '007, 2'} current status
 INFO:root:=============== TURN 026 ================
+INFO:root:1 will move to position 007, 0
+INFO:root:{'007, 0'} current status
+INFO:root:2 will move to position 006, 2
+INFO:root:{'007, 0', '006, 2'} current status
+INFO:root:0 will move to position 010, 0
+INFO:root:{'007, 0', '006, 2', '010, 0'} current status
 INFO:root:=============== TURN 027 ================
-INFO:root:got best node 008, 16
+INFO:root:2 will move to position 006, 1
+INFO:root:{'006, 1'} current status
+INFO:root:1 will move to position 008, 0
+INFO:root:{'008, 0', '006, 1'} current status
+INFO:root:0 will move to position 011, 0
+INFO:root:{'008, 0', '006, 1', '011, 0'} current status
 INFO:root:=============== TURN 028 ================
-INFO:root:got best node 008, 16
+INFO:root:1 will move to position 009, 0
+INFO:root:{'009, 0'} current status
+INFO:root:0 will move to position 012, 0
+INFO:root:{'012, 0', '009, 0'} current status
+INFO:root:2 will move to position 006, 0
+INFO:root:{'006, 0', '012, 0', '009, 0'} current status
 INFO:root:=============== TURN 029 ================
-INFO:root:got best node 008, 16
+INFO:root:0 will move to position 013, 0
+INFO:root:{'013, 0'} current status
+INFO:root:1 will move to position 010, 0
+INFO:root:{'013, 0', '010, 0'} current status
+INFO:root:2 will move to position 007, 0
+INFO:root:{'013, 0', '010, 0', '007, 0'} current status
 INFO:root:=============== TURN 030 ================
+INFO:root:1 will move to position 011, 0
+INFO:root:{'011, 0'} current status
+INFO:root:0 will move to position 013, 1
+INFO:root:{'013, 1', '011, 0'} current status
+INFO:root:2 will move to position 008, 0
+INFO:root:{'013, 1', '008, 0', '011, 0'} current status
 INFO:root:=============== TURN 031 ================
+INFO:root:0 will move to position 014, 1
+INFO:root:{'014, 1'} current status
+INFO:root:1 will move to position 012, 0
+INFO:root:{'012, 0', '014, 1'} current status
+INFO:root:2 will move to position 009, 0
+INFO:root:{'012, 0', '009, 0', '014, 1'} current status
 INFO:root:=============== TURN 032 ================
+INFO:root:1 will move to position 013, 0
+INFO:root:{'013, 0'} current status
+INFO:root:0 will move to position 015, 1
+INFO:root:{'015, 1', '013, 0'} current status
+INFO:root:2 will move to position 010, 0
+INFO:root:{'015, 1', '013, 0', '010, 0'} current status
 INFO:root:=============== TURN 033 ================
+INFO:root:0 will move to position 016, 1
+INFO:root:{'016, 1'} current status
+INFO:root:1 will move to position 013, 1
+INFO:root:{'016, 1', '013, 1'} current status
+INFO:root:2 will move to position 011, 0
+INFO:root:{'011, 0', '016, 1', '013, 1'} current status
 INFO:root:=============== TURN 034 ================
+INFO:root:1 will move to position 014, 1
+INFO:root:{'014, 1'} current status
+INFO:root:0 will move to position 017, 1
+INFO:root:{'017, 1', '014, 1'} current status
+INFO:root:2 will move to position 012, 0
+INFO:root:{'012, 0', '017, 1', '014, 1'} current status
 INFO:root:=============== TURN 035 ================
+INFO:root:0 will move to position 018, 1
+INFO:root:{'018, 1'} current status
+INFO:root:1 will move to position 015, 1
+INFO:root:{'018, 1', '015, 1'} current status
+INFO:root:2 will move to position 013, 0
+INFO:root:{'018, 1', '015, 1', '013, 0'} current status
 INFO:root:=============== TURN 036 ================
+INFO:root:1 will move to position 016, 1
+INFO:root:{'016, 1'} current status
+INFO:root:0 will move to position 018, 0
+INFO:root:{'016, 1', '018, 0'} current status
+INFO:root:2 will move to position 013, 1
+INFO:root:{'013, 1', '016, 1', '018, 0'} current status
 INFO:root:=============== TURN 037 ================
+INFO:root:0 will move to position 019, 0
+INFO:root:{'019, 0'} current status
+INFO:root:1 wanted to move to 017, 1 but could not because of False fuel and True
+INFO:root:2 wanted to move to 014, 1 but could not because of False fuel and True
 INFO:root:=============== TURN 038 ================
-INFO:root:got best node 008, 16
+INFO:root:0 will move to position 020, 0
+INFO:root:{'020, 0'} current status
+INFO:root:1 will move to position 017, 1
+INFO:root:{'020, 0', '017, 1'} current status
+INFO:root:2 will move to position 014, 1
+INFO:root:{'014, 1', '020, 0', '017, 1'} current status
 INFO:root:=============== TURN 039 ================
-INFO:root:got best node 008, 16
+INFO:root:1 will move to position 018, 1
+INFO:root:{'018, 1'} current status
+INFO:root:0 will move to position 021, 0
+INFO:root:{'018, 1', '021, 0'} current status
+INFO:root:2 will move to position 015, 1
+INFO:root:{'018, 1', '015, 1', '021, 0'} current status
 INFO:root:=============== TURN 040 ================
-INFO:root:got best node 008, 16
+INFO:root:0 will move to position 022, 0
+INFO:root:{'022, 0'} current status
+INFO:root:1 will move to position 018, 0
+INFO:root:{'022, 0', '018, 0'} current status
+INFO:root:2 wanted to move to 016, 1 but could not because of False fuel and True
 INFO:root:=============== TURN 041 ================
-INFO:root:got best node 008, 16
+INFO:root:0 will move to position 023, 0
+INFO:root:{'023, 0'} current status
+INFO:root:1 will move to position 019, 0
+INFO:root:{'019, 0', '023, 0'} current status
+INFO:root:2 will move to position 016, 1
+INFO:root:{'019, 0', '016, 1', '023, 0'} current status
 INFO:root:=============== TURN 042 ================
+INFO:root:1 will move to position 020, 0
+INFO:root:{'020, 0'} current status
+INFO:root:0 will move to position 024, 0
+INFO:root:{'024, 0', '020, 0'} current status
+INFO:root:2 will move to position 017, 1
+INFO:root:{'024, 0', '020, 0', '017, 1'} current status
 INFO:root:=============== TURN 043 ================
-INFO:root:got best node 008, 16
+INFO:root:0 will move to position 025, 0
+INFO:root:{'025, 0'} current status
+INFO:root:1 will move to position 021, 0
+INFO:root:{'025, 0', '021, 0'} current status
+INFO:root:2 will move to position 018, 1
+INFO:root:{'018, 1', '025, 0', '021, 0'} current status
 INFO:root:=============== TURN 044 ================
+INFO:root:1 will move to position 022, 0
+INFO:root:{'022, 0'} current status
+INFO:root:0 will move to position 025, 1
+INFO:root:{'022, 0', '025, 1'} current status
+INFO:root:2 will move to position 018, 0
+INFO:root:{'022, 0', '025, 1', '018, 0'} current status
 INFO:root:=============== TURN 045 ================
+INFO:root:0 will move to position 025, 2
+INFO:root:{'025, 2'} current status
+INFO:root:2 will move to position 019, 0
+INFO:root:{'019, 0', '025, 2'} current status
+INFO:root:1 will move to position 023, 0
+INFO:root:{'019, 0', '025, 2', '023, 0'} current status
 INFO:root:=============== TURN 046 ================
+INFO:root:2 will move to position 020, 0
+INFO:root:{'020, 0'} current status
+INFO:root:0 will move to position 024, 2
+INFO:root:{'020, 0', '024, 2'} current status
+INFO:root:1 will move to position 024, 0
+INFO:root:{'024, 0', '020, 0', '024, 2'} current status
 INFO:root:=============== TURN 047 ================
+INFO:root:0 will move to position 024, 3
+INFO:root:{'024, 3'} current status
+INFO:root:2 will move to position 021, 0
+INFO:root:{'024, 3', '021, 0'} current status
+INFO:root:1 will move to position 025, 0
+INFO:root:{'024, 3', '025, 0', '021, 0'} current status
 INFO:root:=============== TURN 048 ================
+INFO:root:2 will move to position 022, 0
+INFO:root:{'022, 0'} current status
+INFO:root:0 will move to position 024, 4
+INFO:root:{'022, 0', '024, 4'} current status
+INFO:root:1 will move to position 025, 1
+INFO:root:{'022, 0', '024, 4', '025, 1'} current status
 INFO:root:=============== TURN 049 ================
+INFO:root:0 will move to position 023, 4
+INFO:root:{'023, 4'} current status
+INFO:root:2 wanted to move to 023, 0 but could not because of False fuel and True
+INFO:root:1 will move to position 025, 2
+INFO:root:{'022, 0', '023, 4', '025, 2'} current status
 INFO:root:=============== TURN 050 ================
+INFO:root:0 wanted to move to 023, 5 but could not because of False fuel and True
+INFO:root:1 will move to position 024, 2
+INFO:root:{'023, 4', '024, 2'} current status
+INFO:root:2 will move to position 023, 0
+INFO:root:{'023, 0', '023, 4', '024, 2'} current status
 INFO:root:=============== TURN 051 ================
+INFO:root:1 wanted to move to 024, 3 but could not because of False fuel and True
+INFO:root:2 will move to position 024, 0
+INFO:root:{'024, 0', '024, 2'} current status
+INFO:root:0 will move to position 023, 5
+INFO:root:{'023, 5', '024, 0', '024, 2'} current status
 INFO:root:=============== TURN 052 ================
+INFO:root:2 will move to position 025, 0
+INFO:root:{'025, 0'} current status
+INFO:root:0 will move to position 023, 6
+INFO:root:{'023, 6', '025, 0'} current status
+INFO:root:1 will move to position 024, 3
+INFO:root:{'024, 3', '023, 6', '025, 0'} current status
 INFO:root:=============== TURN 053 ================
+INFO:root:0 wanted to move to 023, 7 but could not because of False fuel and True
+INFO:root:2 will move to position 025, 1
+INFO:root:{'025, 1', '023, 6'} current status
+INFO:root:1 will move to position 024, 4
+INFO:root:{'025, 1', '023, 6', '024, 4'} current status
 INFO:root:=============== TURN 054 ================
+INFO:root:2 will move to position 025, 2
+INFO:root:{'025, 2'} current status
+INFO:root:1 wanted to move to 023, 4 but could not because of False fuel and True
+INFO:root:0 will move to position 023, 7
+INFO:root:{'023, 7', '024, 4', '025, 2'} current status
 INFO:root:=============== TURN 055 ================
+INFO:root:2 will move to position 024, 2
+INFO:root:{'024, 2'} current status
+INFO:root:0 will move to position 023, 8
+INFO:root:{'023, 8', '024, 2'} current status
+INFO:root:1 will move to position 023, 4
+INFO:root:{'023, 8', '023, 4', '024, 2'} current status
 INFO:root:=============== TURN 056 ================
+INFO:root:0 wanted to move to 023, 9 but could not because of False fuel and True
+INFO:root:2 will move to position 024, 3
+INFO:root:{'024, 3', '023, 8'} current status
+INFO:root:1 will move to position 023, 5
+INFO:root:{'024, 3', '023, 8', '023, 5'} current status
 INFO:root:=============== TURN 057 ================
+INFO:root:2 will move to position 024, 4
+INFO:root:{'024, 4'} current status
+INFO:root:1 wanted to move to 023, 6 but could not because of False fuel and True
+INFO:root:0 will move to position 023, 9
+INFO:root:{'024, 4', '023, 5', '023, 9'} current status
 INFO:root:=============== TURN 058 ================
+INFO:root:2 will move to position 023, 4
+INFO:root:{'023, 4'} current status
+INFO:root:0 will move to position 023, 10
+INFO:root:{'023, 10', '023, 4'} current status
+INFO:root:1 will move to position 023, 6
+INFO:root:{'023, 6', '023, 10', '023, 4'} current status
 INFO:root:=============== TURN 059 ================
+INFO:root:0 wanted to move to 023, 11 but could not because of False fuel and True
+INFO:root:2 wanted to move to 023, 5 but could not because of False fuel and True
+INFO:root:1 will move to position 023, 7
+INFO:root:{'023, 7', '023, 10', '023, 4'} current status
 INFO:root:=============== TURN 060 ================
+INFO:root:1 will move to position 023, 8
+INFO:root:{'023, 8'} current status
+INFO:root:0 will move to position 023, 11
+INFO:root:{'023, 8', '023, 11'} current status
+INFO:root:2 will move to position 023, 5
+INFO:root:{'023, 8', '023, 5', '023, 11'} current status
 INFO:root:=============== TURN 061 ================
+INFO:root:0 will move to position 023, 12
+INFO:root:{'023, 12'} current status
+INFO:root:1 will move to position 023, 9
+INFO:root:{'023, 9', '023, 12'} current status
+INFO:root:2 will move to position 023, 6
+INFO:root:{'023, 6', '023, 9', '023, 12'} current status
 INFO:root:=============== TURN 062 ================
+INFO:root:1 will move to position 023, 10
+INFO:root:{'023, 10'} current status
+INFO:root:0 will move to position 022, 12
+INFO:root:{'023, 10', '022, 12'} current status
+INFO:root:2 wanted to move to 023, 7 but could not because of False fuel and True
 INFO:root:=============== TURN 063 ================
+INFO:root:1 wanted to move to 023, 11 but could not because of False fuel and True
+INFO:root:0 will move to position 021, 12
+INFO:root:{'021, 12', '023, 10'} current status
+INFO:root:2 will move to position 023, 7
+INFO:root:{'021, 12', '023, 10', '023, 7'} current status
 INFO:root:=============== TURN 064 ================
-INFO:root:got best node 008, 16
+INFO:root:0 wanted to move to 020, 12 but could not because of False fuel and True
+INFO:root:2 will move to position 023, 8
+INFO:root:{'021, 12', '023, 8'} current status
+INFO:root:1 will move to position 023, 11
+INFO:root:{'021, 12', '023, 8', '023, 11'} current status
 INFO:root:=============== TURN 065 ================
-INFO:root:got best node 008, 16
+INFO:root:2 wanted to move to 023, 9 but could not because of False fuel and True
+INFO:root:1 will move to position 023, 12
+INFO:root:{'023, 8', '023, 12'} current status
+INFO:root:0 will move to position 020, 12
+INFO:root:{'020, 12', '023, 8', '023, 12'} current status
 INFO:root:=============== TURN 066 ================
-INFO:root:got best node 008, 16
+INFO:root:1 will move to position 022, 12
+INFO:root:{'022, 12'} current status
+INFO:root:0 wanted to move to 019, 12 but could not because of False fuel and True
+INFO:root:2 will move to position 023, 9
+INFO:root:{'020, 12', '023, 9', '022, 12'} current status
 INFO:root:=============== TURN 067 ================
+INFO:root:1 wanted to move to 021, 12 but could not because of False fuel and True
+INFO:root:2 wanted to move to 023, 10 but could not because of False fuel and True
+INFO:root:0 will move to position 019, 12
+INFO:root:{'019, 12', '023, 9', '022, 12'} current status
 INFO:root:=============== TURN 068 ================
+INFO:root:got best node 000, 16
+INFO:root:0 wanted to move to 020, 12 but could not because of False fuel and True
+INFO:root:1 will move to position 021, 12
+INFO:root:{'021, 12', '019, 12'} current status
+INFO:root:2 will move to position 023, 10
+INFO:root:{'021, 12', '023, 10', '019, 12'} current status
 INFO:root:=============== TURN 069 ================
+INFO:root:1 will move to position 020, 12
+INFO:root:{'020, 12'} current status
+INFO:root:2 will move to position 023, 11
+INFO:root:{'020, 12', '023, 11'} current status
+INFO:root:0 wanted to move to 020, 12 but could not because of True fuel and False
 INFO:root:=============== TURN 070 ================
+INFO:root:1 wanted to move to 019, 12 but could not because of False fuel and True
+INFO:root:2 will move to position 023, 12
+INFO:root:{'020, 12', '023, 12'} current status
+INFO:root:0 wanted to move to 020, 12 but could not because of True fuel and False
 INFO:root:=============== TURN 071 ================
+INFO:root:2 will move to position 022, 12
+INFO:root:{'022, 12'} current status
+INFO:root:1 will move to position 019, 12
+INFO:root:{'019, 12', '022, 12'} current status
+INFO:root:0 will move to position 020, 12
+INFO:root:{'020, 12', '019, 12', '022, 12'} current status
 INFO:root:=============== TURN 072 ================
+INFO:root:got best node 000, 16
+INFO:root:1 wanted to move to 020, 12 but could not because of False fuel and True
+INFO:root:2 will move to position 021, 12
+INFO:root:{'021, 12', '019, 12'} current status
+INFO:root:0 wanted to move to 021, 12 but could not because of True fuel and False
 INFO:root:=============== TURN 073 ================
+INFO:root:2 will move to position 020, 12
+INFO:root:{'020, 12'} current status
+INFO:root:1 wanted to move to 020, 12 but could not because of True fuel and False
+INFO:root:0 will move to position 021, 12
+INFO:root:{'020, 12', '021, 12', '019, 12'} current status
 INFO:root:=============== TURN 074 ================
+INFO:root:2 will move to position 019, 12
+INFO:root:{'019, 12'} current status
+INFO:root:0 will move to position 022, 12
+INFO:root:{'019, 12', '022, 12'} current status
+INFO:root:1 will move to position 020, 12
+INFO:root:{'020, 12', '019, 12', '022, 12'} current status
 INFO:root:=============== TURN 075 ================
+INFO:root:0 will move to position 023, 12
+INFO:root:{'023, 12'} current status
+INFO:root:1 will move to position 021, 12
+INFO:root:{'021, 12', '023, 12'} current status
+INFO:root:got best node 000, 16
+INFO:root:2 wanted to move to 020, 12 but could not because of False fuel and True
 INFO:root:=============== TURN 076 ================
+INFO:root:0 will move to position 023, 13
+INFO:root:{'023, 13'} current status
+INFO:root:1 will move to position 022, 12
+INFO:root:{'023, 13', '022, 12'} current status
+INFO:root:2 will move to position 020, 12
+INFO:root:{'020, 12', '023, 13', '022, 12'} current status
 INFO:root:=============== TURN 077 ================
+INFO:root:1 will move to position 023, 12
+INFO:root:{'023, 12'} current status
+INFO:root:2 will move to position 021, 12
+INFO:root:{'021, 12', '023, 12'} current status
+INFO:root:0 will move to position 023, 14
+INFO:root:{'021, 12', '023, 14', '023, 12'} current status
 INFO:root:=============== TURN 078 ================
-INFO:root:got best node 008, 16
+INFO:root:2 will move to position 022, 12
+INFO:root:{'022, 12'} current status
+INFO:root:1 will move to position 023, 13
+INFO:root:{'023, 13', '022, 12'} current status
+INFO:root:0 will move to position 023, 15
+INFO:root:{'023, 15', '023, 13', '022, 12'} current status
 INFO:root:=============== TURN 079 ================
-INFO:root:got best node 008, 16
+INFO:root:1 will move to position 023, 14
+INFO:root:{'023, 14'} current status
+INFO:root:2 will move to position 023, 12
+INFO:root:{'023, 14', '023, 12'} current status
+INFO:root:0 will move to position 024, 15
+INFO:root:{'024, 15', '023, 14', '023, 12'} current status
 INFO:root:=============== TURN 080 ================
-INFO:root:got best node 008, 16
+INFO:root:2 will move to position 023, 13
+INFO:root:{'023, 13'} current status
+INFO:root:1 will move to position 023, 15
+INFO:root:{'023, 15', '023, 13'} current status
+INFO:root:0 will move to position 025, 15
+INFO:root:{'023, 15', '023, 13', '025, 15'} current status
 INFO:root:=============== TURN 081 ================
-INFO:root:got best node 008, 16
+INFO:root:1 will move to position 024, 15
+INFO:root:{'024, 15'} current status
+INFO:root:2 will move to position 023, 14
+INFO:root:{'023, 14', '024, 15'} current status
+INFO:root:0 will move to position 026, 15
+INFO:root:{'026, 15', '023, 14', '024, 15'} current status
 INFO:root:=============== TURN 082 ================
-INFO:root:got best node 008, 16
+INFO:root:2 will move to position 023, 15
+INFO:root:{'023, 15'} current status
+INFO:root:1 will move to position 025, 15
+INFO:root:{'023, 15', '025, 15'} current status
+INFO:root:0 will move to position 027, 15
+INFO:root:{'023, 15', '027, 15', '025, 15'} current status
 INFO:root:=============== TURN 083 ================
-INFO:root:got best node 008, 16
+INFO:root:1 will move to position 026, 15
+INFO:root:{'026, 15'} current status
+INFO:root:0 will move to position 028, 15
+INFO:root:{'026, 15', '028, 15'} current status
+INFO:root:2 wanted to move to 024, 15 but could not because of False fuel and True
 INFO:root:=============== TURN 084 ================
-INFO:root:got best node 008, 16
+INFO:root:1 will move to position 027, 15
+INFO:root:{'027, 15'} current status
+INFO:root:0 will move to position 029, 15
+INFO:root:{'027, 15', '029, 15'} current status
+INFO:root:2 will move to position 024, 15
+INFO:root:{'027, 15', '024, 15', '029, 15'} current status
 INFO:root:=============== TURN 085 ================
-INFO:root:got best node 008, 16
+INFO:root:0 will move to position 030, 15
+INFO:root:{'030, 15'} current status
+INFO:root:1 will move to position 028, 15
+INFO:root:{'030, 15', '028, 15'} current status
+INFO:root:2 will move to position 025, 15
+INFO:root:{'030, 15', '028, 15', '025, 15'} current status
 INFO:root:=============== TURN 086 ================
-INFO:root:got best node 008, 16
+INFO:root:1 will move to position 029, 15
+INFO:root:{'029, 15'} current status
+INFO:root:0 will move to position 031, 15
+INFO:root:{'031, 15', '029, 15'} current status
+INFO:root:2 wanted to move to 026, 15 but could not because of False fuel and True
 INFO:root:=============== TURN 087 ================
-INFO:root:got best node 008, 16
+INFO:root:1 will move to position 030, 15
+INFO:root:{'030, 15'} current status
+INFO:root:0 will move to position 000, 15
+INFO:root:{'030, 15', '000, 15'} current status
+INFO:root:2 will move to position 026, 15
+INFO:root:{'026, 15', '030, 15', '000, 15'} current status
 INFO:root:=============== TURN 088 ================
+INFO:root:0 will move to position 000, 16
+INFO:root:{'000, 16'} current status
+INFO:root:1 will move to position 031, 15
+INFO:root:{'000, 16', '031, 15'} current status
+INFO:root:2 will move to position 027, 15
+INFO:root:{'000, 16', '027, 15', '031, 15'} current status
 INFO:root:=============== TURN 089 ================
+INFO:root:1 wanted to move to 000, 15 but could not because of False fuel and True
+INFO:root:got best node 016, 17
+INFO:root:0 will move to position 000, 15
+INFO:root:{'000, 15', '031, 15'} current status
+INFO:root:2 will move to position 028, 15
+INFO:root:{'028, 15', '000, 15', '031, 15'} current status
 INFO:root:=============== TURN 090 ================
+INFO:root:0 will move to position 031, 15
+INFO:root:{'031, 15'} current status
+INFO:root:2 will move to position 029, 15
+INFO:root:{'031, 15', '029, 15'} current status
+INFO:root:1 will move to position 000, 15
+INFO:root:{'000, 15', '031, 15', '029, 15'} current status
 INFO:root:=============== TURN 091 ================
+INFO:root:2 wanted to move to 030, 15 but could not because of False fuel and True
+INFO:root:0 will move to position 030, 15
+INFO:root:{'030, 15', '029, 15'} current status
+INFO:root:1 will move to position 000, 16
+INFO:root:{'000, 16', '030, 15', '029, 15'} current status
 INFO:root:=============== TURN 092 ================
+INFO:root:0 will move to position 029, 15
+INFO:root:{'029, 15'} current status
+INFO:root:got best node 016, 17
+INFO:root:1 wanted to move to 000, 15 but could not because of False fuel and True
+INFO:root:2 will move to position 030, 15
+INFO:root:{'000, 16', '030, 15', '029, 15'} current status
 INFO:root:=============== TURN 093 ================
+INFO:root:0 will move to position 028, 15
+INFO:root:{'028, 15'} current status
+INFO:root:2 will move to position 031, 15
+INFO:root:{'031, 15', '028, 15'} current status
+INFO:root:1 will move to position 000, 15
+INFO:root:{'031, 15', '000, 15', '028, 15'} current status
 INFO:root:=============== TURN 094 ================
+INFO:root:2 will move to position 000, 15
+INFO:root:{'000, 15'} current status
+INFO:root:0 will move to position 027, 15
+INFO:root:{'027, 15', '000, 15'} current status
+INFO:root:1 will move to position 031, 15
+INFO:root:{'031, 15', '027, 15', '000, 15'} current status
 INFO:root:=============== TURN 095 ================
+INFO:root:0 will move to position 026, 15
+INFO:root:{'026, 15'} current status
+INFO:root:2 wanted to move to 000, 16 but could not because of False fuel and True
+INFO:root:1 will move to position 030, 15
+INFO:root:{'026, 15', '030, 15', '000, 15'} current status
 INFO:root:=============== TURN 096 ================
+INFO:root:0 will move to position 025, 15
+INFO:root:{'025, 15'} current status
+INFO:root:1 will move to position 029, 15
+INFO:root:{'029, 15', '025, 15'} current status
+INFO:root:2 will move to position 000, 16
+INFO:root:{'000, 16', '029, 15', '025, 15'} current status
 INFO:root:=============== TURN 097 ================
+INFO:root:1 will move to position 028, 15
+INFO:root:{'028, 15'} current status
+INFO:root:0 will move to position 024, 15
+INFO:root:{'024, 15', '028, 15'} current status
+INFO:root:got best node 016, 17
+INFO:root:2 will move to position 000, 15
+INFO:root:{'000, 15', '024, 15', '028, 15'} current status
 INFO:root:=============== TURN 098 ================
+INFO:root:0 will move to position 023, 15
+INFO:root:{'023, 15'} current status
+INFO:root:1 will move to position 027, 15
+INFO:root:{'023, 15', '027, 15'} current status
+INFO:root:2 wanted to move to 031, 15 but could not because of False fuel and True
 INFO:root:=============== TURN 099 ================
+INFO:root:0 will move to position 023, 16
+INFO:root:{'023, 16'} current status
+INFO:root:1 will move to position 026, 15
+INFO:root:{'026, 15', '023, 16'} current status
+INFO:root:2 will move to position 031, 15
+INFO:root:{'026, 15', '023, 16', '031, 15'} current status
 INFO:root:=============== TURN 100 ================
+INFO:root:1 will move to position 025, 15
+INFO:root:{'025, 15'} current status
+INFO:root:0 will move to position 022, 16
+INFO:root:{'022, 16', '025, 15'} current status
+INFO:root:2 will move to position 030, 15
+INFO:root:{'030, 15', '022, 16', '025, 15'} current status
 INFO:root:=============== TURN 101 ================
+INFO:root:0 will move to position 021, 16
+INFO:root:{'021, 16'} current status
+INFO:root:1 wanted to move to 024, 15 but could not because of False fuel and True
+INFO:root:2 will move to position 029, 15
+INFO:root:{'029, 15', '025, 15', '021, 16'} current status
 INFO:root:=============== TURN 102 ================
+INFO:root:0 will move to position 020, 16
+INFO:root:{'020, 16'} current status
+INFO:root:2 wanted to move to 028, 15 but could not because of False fuel and True
+INFO:root:1 will move to position 024, 15
+INFO:root:{'020, 16', '024, 15', '029, 15'} current status
 INFO:root:=============== TURN 103 ================
+INFO:root:0 will move to position 019, 16
+INFO:root:{'019, 16'} current status
+INFO:root:1 will move to position 023, 15
+INFO:root:{'019, 16', '023, 15'} current status
+INFO:root:2 will move to position 028, 15
+INFO:root:{'019, 16', '023, 15', '028, 15'} current status
 INFO:root:=============== TURN 104 ================
+INFO:root:1 will move to position 023, 16
+INFO:root:{'023, 16'} current status
+INFO:root:0 will move to position 019, 17
+INFO:root:{'023, 16', '019, 17'} current status
+INFO:root:2 will move to position 027, 15
+INFO:root:{'023, 16', '027, 15', '019, 17'} current status
 INFO:root:=============== TURN 105 ================
+INFO:root:0 will move to position 018, 17
+INFO:root:{'018, 17'} current status
+INFO:root:1 will move to position 022, 16
+INFO:root:{'018, 17', '022, 16'} current status
+INFO:root:2 will move to position 026, 15
+INFO:root:{'026, 15', '018, 17', '022, 16'} current status
 INFO:root:=============== TURN 106 ================
+INFO:root:1 will move to position 021, 16
+INFO:root:{'021, 16'} current status
+INFO:root:0 will move to position 017, 17
+INFO:root:{'017, 17', '021, 16'} current status
+INFO:root:2 wanted to move to 025, 15 but could not because of False fuel and True
 INFO:root:=============== TURN 107 ================
+INFO:root:1 will move to position 020, 16
+INFO:root:{'020, 16'} current status
+INFO:root:0 wanted to move to 016, 17 but could not because of False fuel and True
+INFO:root:2 will move to position 025, 15
+INFO:root:{'020, 16', '017, 17', '025, 15'} current status
 INFO:root:=============== TURN 108 ================
+INFO:root:1 will move to position 019, 16
+INFO:root:{'019, 16'} current status
+INFO:root:2 will move to position 024, 15
+INFO:root:{'019, 16', '024, 15'} current status
+INFO:root:0 will move to position 016, 17
+INFO:root:{'019, 16', '024, 15', '016, 17'} current status
 INFO:root:=============== TURN 109 ================
+INFO:root:2 will move to position 023, 15
+INFO:root:{'023, 15'} current status
+INFO:root:got best node 004, 22
+INFO:root:0 will move to position 017, 17
+INFO:root:{'023, 15', '017, 17'} current status
+INFO:root:1 will move to position 019, 17
+INFO:root:{'023, 15', '019, 17', '017, 17'} current status
 INFO:root:=============== TURN 110 ================
+INFO:root:0 will move to position 018, 17
+INFO:root:{'018, 17'} current status
+INFO:root:1 wanted to move to 018, 17 but could not because of False fuel and False
+INFO:root:2 will move to position 023, 16
+INFO:root:{'018, 17', '019, 17', '023, 16'} current status
 INFO:root:=============== TURN 111 ================
+INFO:root:0 wanted to move to 019, 17 but could not because of False fuel and True
+INFO:root:2 will move to position 022, 16
+INFO:root:{'018, 17', '022, 16'} current status
+INFO:root:1 wanted to move to 018, 17 but could not because of True fuel and False
 INFO:root:=============== TURN 112 ================
+INFO:root:2 will move to position 021, 16
+INFO:root:{'021, 16'} current status
+INFO:root:0 will move to position 019, 17
+INFO:root:{'019, 17', '021, 16'} current status
+INFO:root:1 will move to position 018, 17
+INFO:root:{'018, 17', '019, 17', '021, 16'} current status
 INFO:root:=============== TURN 113 ================
-INFO:root:got best node 008, 16
+INFO:root:0 will move to position 019, 16
+INFO:root:{'019, 16'} current status
+INFO:root:2 wanted to move to 020, 16 but could not because of False fuel and True
+INFO:root:1 will move to position 017, 17
+INFO:root:{'019, 16', '017, 17', '021, 16'} current status
 INFO:root:=============== TURN 114 ================
-INFO:root:got best node 008, 16
+INFO:root:0 will move to position 020, 16
+INFO:root:{'020, 16'} current status
+INFO:root:1 will move to position 016, 17
+INFO:root:{'020, 16', '016, 17'} current status
+INFO:root:2 wanted to move to 020, 16 but could not because of True fuel and False
 INFO:root:=============== TURN 115 ================
-INFO:root:got best node 008, 16
+INFO:root:0 will move to position 021, 16
+INFO:root:{'021, 16'} current status
+INFO:root:got best node 004, 22
+INFO:root:1 wanted to move to 017, 17 but could not because of False fuel and True
+INFO:root:2 will move to position 020, 16
+INFO:root:{'020, 16', '016, 17', '021, 16'} current status
 INFO:root:=============== TURN 116 ================
-INFO:root:got best node 008, 16
+INFO:root:0 will move to position 022, 16
+INFO:root:{'022, 16'} current status
+INFO:root:2 will move to position 019, 16
+INFO:root:{'019, 16', '022, 16'} current status
+INFO:root:1 will move to position 017, 17
+INFO:root:{'019, 16', '022, 16', '017, 17'} current status
 INFO:root:=============== TURN 117 ================
+INFO:root:2 will move to position 019, 17
+INFO:root:{'019, 17'} current status
+INFO:root:0 will move to position 023, 16
+INFO:root:{'023, 16', '019, 17'} current status
+INFO:root:1 will move to position 018, 17
+INFO:root:{'023, 16', '019, 17', '018, 17'} current status
 INFO:root:=============== TURN 118 ================
+INFO:root:0 will move to position 023, 15
+INFO:root:{'023, 15'} current status
+INFO:root:2 will move to position 018, 17
+INFO:root:{'023, 15', '018, 17'} current status
+INFO:root:1 will move to position 019, 17
+INFO:root:{'023, 15', '019, 17', '018, 17'} current status
 INFO:root:=============== TURN 119 ================
+INFO:root:2 will move to position 017, 17
+INFO:root:{'017, 17'} current status
+INFO:root:0 will move to position 023, 14
+INFO:root:{'023, 14', '017, 17'} current status
+INFO:root:1 will move to position 019, 16
+INFO:root:{'019, 16', '023, 14', '017, 17'} current status
 INFO:root:=============== TURN 120 ================
+INFO:root:0 will move to position 023, 13
+INFO:root:{'023, 13'} current status
+INFO:root:2 wanted to move to 016, 17 but could not because of False fuel and True
+INFO:root:1 will move to position 020, 16
+INFO:root:{'020, 16', '023, 13', '017, 17'} current status
 INFO:root:=============== TURN 121 ================
+INFO:root:0 will move to position 023, 12
+INFO:root:{'023, 12'} current status
+INFO:root:1 will move to position 021, 16
+INFO:root:{'023, 12', '021, 16'} current status
+INFO:root:2 will move to position 016, 17
+INFO:root:{'016, 17', '023, 12', '021, 16'} current status
 INFO:root:=============== TURN 122 ================
+INFO:root:1 will move to position 022, 16
+INFO:root:{'022, 16'} current status
+INFO:root:0 will move to position 023, 11
+INFO:root:{'022, 16', '023, 11'} current status
+INFO:root:got best node 004, 22
+INFO:root:2 will move to position 017, 17
+INFO:root:{'022, 16', '023, 11', '017, 17'} current status
 INFO:root:=============== TURN 123 ================
+INFO:root:0 wanted to move to 023, 10 but could not because of False fuel and True
+INFO:root:1 will move to position 023, 16
+INFO:root:{'023, 16', '023, 11'} current status
+INFO:root:2 will move to position 018, 17
+INFO:root:{'023, 16', '023, 11', '018, 17'} current status
 INFO:root:=============== TURN 124 ================
+INFO:root:1 will move to position 023, 15
+INFO:root:{'023, 15'} current status
+INFO:root:2 wanted to move to 019, 17 but could not because of False fuel and True
+INFO:root:0 will move to position 023, 10
+INFO:root:{'023, 15', '023, 10', '018, 17'} current status
 INFO:root:=============== TURN 125 ================
+INFO:root:1 will move to position 023, 14
+INFO:root:{'023, 14'} current status
+INFO:root:0 will move to position 023, 9
+INFO:root:{'023, 14', '023, 9'} current status
+INFO:root:2 will move to position 019, 17
+INFO:root:{'019, 17', '023, 14', '023, 9'} current status
 INFO:root:=============== TURN 126 ================
+INFO:root:0 wanted to move to 023, 8 but could not because of False fuel and True
+INFO:root:1 will move to position 023, 13
+INFO:root:{'023, 13', '023, 9'} current status
+INFO:root:2 will move to position 019, 16
+INFO:root:{'019, 16', '023, 13', '023, 9'} current status
 INFO:root:=============== TURN 127 ================
+INFO:root:1 will move to position 023, 12
+INFO:root:{'023, 12'} current status
+INFO:root:2 will move to position 020, 16
+INFO:root:{'020, 16', '023, 12'} current status
+INFO:root:0 will move to position 023, 8
+INFO:root:{'023, 8', '020, 16', '023, 12'} current status
 INFO:root:=============== TURN 128 ================
+INFO:root:2 will move to position 021, 16
+INFO:root:{'021, 16'} current status
+INFO:root:1 will move to position 023, 11
+INFO:root:{'023, 11', '021, 16'} current status
+INFO:root:0 will move to position 023, 7
+INFO:root:{'023, 7', '023, 11', '021, 16'} current status
 INFO:root:=============== TURN 129 ================
+INFO:root:1 will move to position 023, 10
+INFO:root:{'023, 10'} current status
+INFO:root:2 will move to position 022, 16
+INFO:root:{'023, 10', '022, 16'} current status
+INFO:root:0 will move to position 023, 6
+INFO:root:{'023, 6', '023, 10', '022, 16'} current status
 INFO:root:=============== TURN 130 ================
+INFO:root:2 will move to position 023, 16
+INFO:root:{'023, 16'} current status
+INFO:root:1 will move to position 023, 9
+INFO:root:{'023, 16', '023, 9'} current status
+INFO:root:0 will move to position 023, 5
+INFO:root:{'023, 16', '023, 5', '023, 9'} current status
 INFO:root:=============== TURN 131 ================
+INFO:root:1 will move to position 023, 8
+INFO:root:{'023, 8'} current status
+INFO:root:2 will move to position 023, 15
+INFO:root:{'023, 15', '023, 8'} current status
+INFO:root:0 will move to position 023, 4
+INFO:root:{'023, 15', '023, 8', '023, 4'} current status
 INFO:root:=============== TURN 132 ================
+INFO:root:2 wanted to move to 023, 14 but could not because of False fuel and True
+INFO:root:1 will move to position 023, 7
+INFO:root:{'023, 15', '023, 7'} current status
+INFO:root:0 will move to position 024, 4
+INFO:root:{'023, 15', '024, 4', '023, 7'} current status
 INFO:root:=============== TURN 133 ================
+INFO:root:1 will move to position 023, 6
+INFO:root:{'023, 6'} current status
+INFO:root:0 will move to position 024, 3
+INFO:root:{'024, 3', '023, 6'} current status
+INFO:root:2 will move to position 023, 14
+INFO:root:{'024, 3', '023, 6', '023, 14'} current status
 INFO:root:=============== TURN 134 ================
+INFO:root:0 wanted to move to 024, 2 but could not because of False fuel and True
+INFO:root:2 will move to position 023, 13
+INFO:root:{'024, 3', '023, 13'} current status
+INFO:root:1 will move to position 023, 5
+INFO:root:{'024, 3', '023, 5', '023, 13'} current status
 INFO:root:=============== TURN 135 ================
+INFO:root:2 will move to position 023, 12
+INFO:root:{'023, 12'} current status
+INFO:root:1 will move to position 023, 4
+INFO:root:{'023, 4', '023, 12'} current status
+INFO:root:0 will move to position 024, 2
+INFO:root:{'023, 4', '023, 12', '024, 2'} current status
 INFO:root:=============== TURN 136 ================
+INFO:root:1 will move to position 024, 4
+INFO:root:{'024, 4'} current status
+INFO:root:2 will move to position 023, 11
+INFO:root:{'024, 4', '023, 11'} current status
+INFO:root:0 will move to position 025, 2
+INFO:root:{'024, 4', '025, 2', '023, 11'} current status
 INFO:root:=============== TURN 137 ================
+INFO:root:2 will move to position 023, 10
+INFO:root:{'023, 10'} current status
+INFO:root:1 will move to position 024, 3
+INFO:root:{'024, 3', '023, 10'} current status
+INFO:root:0 will move to position 025, 1
+INFO:root:{'024, 3', '025, 1', '023, 10'} current status
 INFO:root:=============== TURN 138 ================
+INFO:root:1 will move to position 024, 2
+INFO:root:{'024, 2'} current status
+INFO:root:0 will move to position 025, 0
+INFO:root:{'025, 0', '024, 2'} current status
+INFO:root:2 will move to position 023, 9
+INFO:root:{'025, 0', '023, 9', '024, 2'} current status
 INFO:root:=============== TURN 139 ================
+INFO:root:0 will move to position 026, 0
+INFO:root:{'026, 0'} current status
+INFO:root:1 will move to position 025, 2
+INFO:root:{'026, 0', '025, 2'} current status
+INFO:root:2 wanted to move to 023, 8 but could not because of False fuel and True
 INFO:root:=============== TURN 140 ================
+INFO:root:0 will move to position 027, 0
+INFO:root:{'027, 0'} current status
+INFO:root:1 will move to position 025, 1
+INFO:root:{'025, 1', '027, 0'} current status
+INFO:root:2 will move to position 023, 8
+INFO:root:{'025, 1', '023, 8', '027, 0'} current status
 INFO:root:=============== TURN 141 ================
+INFO:root:1 will move to position 025, 0
+INFO:root:{'025, 0'} current status
+INFO:root:0 will move to position 028, 0
+INFO:root:{'025, 0', '028, 0'} current status
+INFO:root:2 will move to position 023, 7
+INFO:root:{'025, 0', '023, 7', '028, 0'} current status
 INFO:root:=============== TURN 142 ================
+INFO:root:0 will move to position 029, 0
+INFO:root:{'029, 0'} current status
+INFO:root:1 will move to position 026, 0
+INFO:root:{'026, 0', '029, 0'} current status
+INFO:root:2 will move to position 023, 6
+INFO:root:{'026, 0', '023, 6', '029, 0'} current status
 INFO:root:=============== TURN 143 ================
+INFO:root:1 will move to position 027, 0
+INFO:root:{'027, 0'} current status
+INFO:root:0 will move to position 030, 0
+INFO:root:{'027, 0', '030, 0'} current status
+INFO:root:2 will move to position 023, 5
+INFO:root:{'023, 5', '027, 0', '030, 0'} current status
 INFO:root:=============== TURN 144 ================
+INFO:root:0 wanted to move to 031, 0 but could not because of False fuel and True
+INFO:root:1 wanted to move to 028, 0 but could not because of False fuel and True
+INFO:root:2 will move to position 023, 4
+INFO:root:{'023, 4', '027, 0', '030, 0'} current status
 INFO:root:=============== TURN 145 ================
+INFO:root:2 wanted to move to 024, 4 but could not because of False fuel and True
+INFO:root:0 will move to position 031, 0
+INFO:root:{'031, 0', '023, 4'} current status
+INFO:root:1 will move to position 028, 0
+INFO:root:{'031, 0', '023, 4', '028, 0'} current status
 INFO:root:=============== TURN 146 ================
+INFO:root:0 will move to position 000, 0
+INFO:root:{'000, 0'} current status
+INFO:root:1 will move to position 029, 0
+INFO:root:{'000, 0', '029, 0'} current status
+INFO:root:2 will move to position 024, 4
+INFO:root:{'024, 4', '000, 0', '029, 0'} current status
 INFO:root:=============== TURN 147 ================
+INFO:root:1 will move to position 030, 0
+INFO:root:{'030, 0'} current status
+INFO:root:2 will move to position 024, 3
+INFO:root:{'024, 3', '030, 0'} current status
+INFO:root:0 will move to position 001, 0
+INFO:root:{'024, 3', '001, 0', '030, 0'} current status
 INFO:root:=============== TURN 148 ================
+INFO:root:2 will move to position 024, 2
+INFO:root:{'024, 2'} current status
+INFO:root:1 will move to position 031, 0
+INFO:root:{'031, 0', '024, 2'} current status
+INFO:root:0 will move to position 002, 0
+INFO:root:{'031, 0', '002, 0', '024, 2'} current status
 INFO:root:=============== TURN 149 ================
+INFO:root:1 will move to position 000, 0
+INFO:root:{'000, 0'} current status
+INFO:root:2 will move to position 025, 2
+INFO:root:{'000, 0', '025, 2'} current status
+INFO:root:0 will move to position 002, 31
+INFO:root:{'002, 31', '000, 0', '025, 2'} current status
 INFO:root:=============== TURN 150 ================
+INFO:root:2 will move to position 025, 1
+INFO:root:{'025, 1'} current status
+INFO:root:1 will move to position 001, 0
+INFO:root:{'025, 1', '001, 0'} current status
+INFO:root:0 wanted to move to 002, 30 but could not because of False fuel and True
 INFO:root:=============== TURN 151 ================
+INFO:root:2 will move to position 025, 0
+INFO:root:{'025, 0'} current status
+INFO:root:1 wanted to move to 002, 0 but could not because of False fuel and True
+INFO:root:0 will move to position 002, 30
+INFO:root:{'001, 0', '025, 0', '002, 30'} current status
 INFO:root:=============== TURN 152 ================
+INFO:root:2 will move to position 026, 0
+INFO:root:{'026, 0'} current status
+INFO:root:0 will move to position 002, 29
+INFO:root:{'026, 0', '002, 29'} current status
+INFO:root:1 will move to position 002, 0
+INFO:root:{'026, 0', '002, 29', '002, 0'} current status
 INFO:root:=============== TURN 153 ================
+INFO:root:0 will move to position 002, 28
+INFO:root:{'002, 28'} current status
+INFO:root:2 will move to position 027, 0
+INFO:root:{'002, 28', '027, 0'} current status
+INFO:root:1 will move to position 002, 31
+INFO:root:{'002, 28', '002, 31', '027, 0'} current status
 INFO:root:=============== TURN 154 ================
+INFO:root:2 will move to position 028, 0
+INFO:root:{'028, 0'} current status
+INFO:root:0 will move to position 002, 27
+INFO:root:{'002, 27', '028, 0'} current status
+INFO:root:1 will move to position 002, 30
+INFO:root:{'002, 27', '002, 30', '028, 0'} current status
 INFO:root:=============== TURN 155 ================
+INFO:root:0 wanted to move to 002, 26 but could not because of False fuel and True
+INFO:root:2 will move to position 029, 0
+INFO:root:{'002, 27', '029, 0'} current status
+INFO:root:1 wanted to move to 002, 29 but could not because of False fuel and True
 INFO:root:=============== TURN 156 ================
+INFO:root:2 will move to position 030, 0
+INFO:root:{'030, 0'} current status
+INFO:root:0 will move to position 002, 26
+INFO:root:{'002, 26', '030, 0'} current status
+INFO:root:1 will move to position 002, 29
+INFO:root:{'002, 26', '002, 29', '030, 0'} current status
 INFO:root:=============== TURN 157 ================
+INFO:root:0 will move to position 002, 25
+INFO:root:{'002, 25'} current status
+INFO:root:2 wanted to move to 031, 0 but could not because of False fuel and True
+INFO:root:1 will move to position 002, 28
+INFO:root:{'002, 28', '002, 25', '030, 0'} current status
 INFO:root:=============== TURN 158 ================
+INFO:root:0 wanted to move to 002, 24 but could not because of False fuel and True
+INFO:root:1 will move to position 002, 27
+INFO:root:{'002, 27', '002, 25'} current status
+INFO:root:2 will move to position 031, 0
+INFO:root:{'002, 27', '002, 25', '031, 0'} current status
 INFO:root:=============== TURN 159 ================
+INFO:root:1 wanted to move to 002, 26 but could not because of False fuel and True
+INFO:root:2 will move to position 000, 0
+INFO:root:{'002, 27', '000, 0'} current status
+INFO:root:0 will move to position 002, 24
+INFO:root:{'002, 27', '000, 0', '002, 24'} current status
 INFO:root:=============== TURN 160 ================
+INFO:root:2 will move to position 001, 0
+INFO:root:{'001, 0'} current status
+INFO:root:0 will move to position 002, 23
+INFO:root:{'001, 0', '002, 23'} current status
+INFO:root:1 will move to position 002, 26
+INFO:root:{'002, 26', '001, 0', '002, 23'} current status
 INFO:root:=============== TURN 161 ================
+INFO:root:0 will move to position 002, 22
+INFO:root:{'002, 22'} current status
+INFO:root:2 will move to position 002, 0
+INFO:root:{'002, 22', '002, 0'} current status
+INFO:root:1 will move to position 002, 25
+INFO:root:{'002, 25', '002, 22', '002, 0'} current status
 INFO:root:=============== TURN 162 ================
+INFO:root:2 will move to position 002, 31
+INFO:root:{'002, 31'} current status
+INFO:root:1 wanted to move to 002, 24 but could not because of False fuel and True
+INFO:root:0 wanted to move to 003, 22 but could not because of False fuel and True
 INFO:root:=============== TURN 163 ================
+INFO:root:2 wanted to move to 002, 30 but could not because of False fuel and True
+INFO:root:1 will move to position 002, 24
+INFO:root:{'002, 31', '002, 24'} current status
+INFO:root:0 will move to position 003, 22
+INFO:root:{'003, 22', '002, 31', '002, 24'} current status
 INFO:root:=============== TURN 164 ================
+INFO:root:1 will move to position 002, 23
+INFO:root:{'002, 23'} current status
+INFO:root:0 will move to position 004, 22
+INFO:root:{'004, 22', '002, 23'} current status
+INFO:root:2 will move to position 002, 30
+INFO:root:{'004, 22', '002, 23', '002, 30'} current status
 INFO:root:=============== TURN 165 ================
+INFO:root:got best node 015, 17
+INFO:root:0 wanted to move to 004, 21 but could not because of False fuel and True
+INFO:root:1 wanted to move to 002, 22 but could not because of False fuel and True
+INFO:root:2 will move to position 002, 29
+INFO:root:{'002, 29', '004, 22', '002, 23'} current status
 INFO:root:=============== TURN 166 ================
+INFO:root:2 will move to position 002, 28
+INFO:root:{'002, 28'} current status
+INFO:root:0 will move to position 004, 21
+INFO:root:{'002, 28', '004, 21'} current status
+INFO:root:1 will move to position 002, 22
+INFO:root:{'002, 28', '002, 22', '004, 21'} current status
 INFO:root:=============== TURN 167 ================
+INFO:root:0 will move to position 004, 20
+INFO:root:{'004, 20'} current status
+INFO:root:1 will move to position 003, 22
+INFO:root:{'004, 20', '003, 22'} current status
+INFO:root:2 wanted to move to 002, 27 but could not because of False fuel and True
 INFO:root:=============== TURN 168 ================
+INFO:root:0 will move to position 004, 19
+INFO:root:{'004, 19'} current status
+INFO:root:1 will move to position 004, 22
+INFO:root:{'004, 22', '004, 19'} current status
+INFO:root:2 will move to position 002, 27
+INFO:root:{'002, 27', '004, 22', '004, 19'} current status
 INFO:root:=============== TURN 169 ================
+INFO:root:got best node 015, 17
+INFO:root:1 wanted to move to 003, 22 but could not because of False fuel and True
+INFO:root:2 will move to position 002, 26
+INFO:root:{'002, 26', '004, 22'} current status
+INFO:root:0 will move to position 005, 19
+INFO:root:{'002, 26', '004, 22', '005, 19'} current status
 INFO:root:=============== TURN 170 ================
+INFO:root:2 wanted to move to 002, 25 but could not because of False fuel and True
+INFO:root:0 wanted to move to 005, 18 but could not because of False fuel and True
+INFO:root:1 will move to position 003, 22
+INFO:root:{'002, 26', '005, 19', '003, 22'} current status
 INFO:root:=============== TURN 171 ================
+INFO:root:1 will move to position 002, 22
+INFO:root:{'002, 22'} current status
+INFO:root:2 will move to position 002, 25
+INFO:root:{'002, 25', '002, 22'} current status
+INFO:root:0 will move to position 005, 18
+INFO:root:{'005, 18', '002, 25', '002, 22'} current status
 INFO:root:=============== TURN 172 ================
-INFO:root:got best node 008, 16
+INFO:root:2 will move to position 002, 24
+INFO:root:{'002, 24'} current status
+INFO:root:1 will move to position 002, 23
+INFO:root:{'002, 23', '002, 24'} current status
+INFO:root:0 will move to position 005, 17
+INFO:root:{'002, 23', '005, 17', '002, 24'} current status
 INFO:root:=============== TURN 173 ================
+INFO:root:1 will move to position 002, 24
+INFO:root:{'002, 24'} current status
+INFO:root:2 will move to position 002, 23
+INFO:root:{'002, 23', '002, 24'} current status
+INFO:root:0 will move to position 005, 16
+INFO:root:{'005, 16', '002, 23', '002, 24'} current status
 INFO:root:=============== TURN 174 ================
+INFO:root:2 will move to position 002, 22
+INFO:root:{'002, 22'} current status
+INFO:root:0 will move to position 006, 16
+INFO:root:{'006, 16', '002, 22'} current status
+INFO:root:1 will move to position 002, 25
+INFO:root:{'002, 25', '006, 16', '002, 22'} current status
 INFO:root:=============== TURN 175 ================
+INFO:root:0 will move to position 007, 16
+INFO:root:{'007, 16'} current status
+INFO:root:1 will move to position 002, 26
+INFO:root:{'007, 16', '002, 26'} current status
+INFO:root:2 will move to position 003, 22
+INFO:root:{'007, 16', '003, 22', '002, 26'} current status
 INFO:root:=============== TURN 176 ================
-INFO:root:got best node 008, 16
+INFO:root:1 will move to position 002, 27
+INFO:root:{'002, 27'} current status
+INFO:root:0 will move to position 008, 16
+INFO:root:{'002, 27', '008, 16'} current status
+INFO:root:2 wanted to move to 004, 22 but could not because of False fuel and True
 INFO:root:=============== TURN 177 ================
-INFO:root:got best node 008, 16
+INFO:root:1 will move to position 002, 28
+INFO:root:{'002, 28'} current status
+INFO:root:0 will move to position 009, 16
+INFO:root:{'002, 28', '009, 16'} current status
+INFO:root:2 will move to position 004, 22
+INFO:root:{'002, 28', '009, 16', '004, 22'} current status
 INFO:root:=============== TURN 178 ================
+INFO:root:0 wanted to move to 010, 16 but could not because of False fuel and True
+INFO:root:1 wanted to move to 002, 29 but could not because of False fuel and True
+INFO:root:got best node 015, 17
+INFO:root:2 will move to position 003, 22
+INFO:root:{'002, 28', '009, 16', '003, 22'} current status
 INFO:root:=============== TURN 179 ================
+INFO:root:2 wanted to move to 002, 22 but could not because of False fuel and True
+INFO:root:0 will move to position 010, 16
+INFO:root:{'010, 16', '003, 22'} current status
+INFO:root:1 will move to position 002, 29
+INFO:root:{'010, 16', '002, 29', '003, 22'} current status
 INFO:root:=============== TURN 180 ================
+INFO:root:0 wanted to move to 011, 16 but could not because of False fuel and True
+INFO:root:1 will move to position 002, 30
+INFO:root:{'010, 16', '002, 30'} current status
+INFO:root:2 will move to position 002, 22
+INFO:root:{'010, 16', '002, 22', '002, 30'} current status
 INFO:root:=============== TURN 181 ================
+INFO:root:1 wanted to move to 002, 31 but could not because of False fuel and True
+INFO:root:2 will move to position 002, 23
+INFO:root:{'002, 23', '002, 30'} current status
+INFO:root:0 will move to position 011, 16
+INFO:root:{'011, 16', '002, 23', '002, 30'} current status
 INFO:root:=============== TURN 182 ================
+INFO:root:2 will move to position 002, 24
+INFO:root:{'002, 24'} current status
+INFO:root:0 will move to position 012, 16
+INFO:root:{'012, 16', '002, 24'} current status
+INFO:root:1 will move to position 002, 31
+INFO:root:{'012, 16', '002, 31', '002, 24'} current status
 INFO:root:=============== TURN 183 ================
+INFO:root:0 will move to position 012, 17
+INFO:root:{'012, 17'} current status
+INFO:root:2 will move to position 002, 25
+INFO:root:{'002, 25', '012, 17'} current status
+INFO:root:1 will move to position 002, 0
+INFO:root:{'002, 25', '012, 17', '002, 0'} current status
 INFO:root:=============== TURN 184 ================
+INFO:root:2 wanted to move to 002, 26 but could not because of False fuel and True
+INFO:root:1 will move to position 003, 0
+INFO:root:{'003, 0', '002, 25'} current status
+INFO:root:0 wanted to move to 013, 17 but could not because of False fuel and True
 INFO:root:=============== TURN 185 ================
+INFO:root:1 will move to position 004, 0
+INFO:root:{'004, 0'} current status
+INFO:root:2 will move to position 002, 26
+INFO:root:{'002, 26', '004, 0'} current status
+INFO:root:0 will move to position 013, 17
+INFO:root:{'002, 26', '013, 17', '004, 0'} current status
 INFO:root:=============== TURN 186 ================
+INFO:root:2 wanted to move to 002, 27 but could not because of False fuel and True
+INFO:root:1 will move to position 005, 0
+INFO:root:{'002, 26', '005, 0'} current status
+INFO:root:0 will move to position 014, 17
+INFO:root:{'002, 26', '014, 17', '005, 0'} current status
 INFO:root:=============== TURN 187 ================
+INFO:root:1 will move to position 006, 0
+INFO:root:{'006, 0'} current status
+INFO:root:0 wanted to move to 015, 17 but could not because of False fuel and True
+INFO:root:2 will move to position 002, 27
+INFO:root:{'006, 0', '014, 17', '002, 27'} current status
 INFO:root:=============== TURN 188 ================
+INFO:root:1 will move to position 006, 1
+INFO:root:{'006, 1'} current status
+INFO:root:2 will move to position 002, 28
+INFO:root:{'002, 28', '006, 1'} current status
+INFO:root:0 will move to position 015, 17
+INFO:root:{'002, 28', '006, 1', '015, 17'} current status
 INFO:root:=============== TURN 189 ================
+INFO:root:2 will move to position 002, 29
+INFO:root:{'002, 29'} current status
+INFO:root:1 will move to position 006, 2
+INFO:root:{'002, 29', '006, 2'} current status
+INFO:root:got best node 027, 22
+INFO:root:0 will move to position 014, 17
+INFO:root:{'014, 17', '002, 29', '006, 2'} current status
 INFO:root:=============== TURN 190 ================
+INFO:root:1 will move to position 007, 2
+INFO:root:{'007, 2'} current status
+INFO:root:2 will move to position 002, 30
+INFO:root:{'002, 30', '007, 2'} current status
+INFO:root:0 will move to position 013, 17
+INFO:root:{'013, 17', '002, 30', '007, 2'} current status
 INFO:root:=============== TURN 191 ================
+INFO:root:2 will move to position 002, 31
+INFO:root:{'002, 31'} current status
+INFO:root:1 will move to position 007, 3
+INFO:root:{'007, 3', '002, 31'} current status
+INFO:root:0 will move to position 012, 17
+INFO:root:{'007, 3', '012, 17', '002, 31'} current status
 INFO:root:=============== TURN 192 ================
+INFO:root:1 will move to position 007, 4
+INFO:root:{'007, 4'} current status
+INFO:root:2 will move to position 002, 0
+INFO:root:{'007, 4', '002, 0'} current status
+INFO:root:0 wanted to move to 012, 16 but could not because of False fuel and True
 INFO:root:=============== TURN 193 ================
+INFO:root:1 will move to position 008, 4
+INFO:root:{'008, 4'} current status
+INFO:root:2 will move to position 003, 0
+INFO:root:{'003, 0', '008, 4'} current status
+INFO:root:0 will move to position 012, 16
+INFO:root:{'003, 0', '008, 4', '012, 16'} current status
 INFO:root:=============== TURN 194 ================
+INFO:root:2 will move to position 004, 0
+INFO:root:{'004, 0'} current status
+INFO:root:1 will move to position 008, 5
+INFO:root:{'008, 5', '004, 0'} current status
+INFO:root:0 will move to position 011, 16
+INFO:root:{'008, 5', '011, 16', '004, 0'} current status
 INFO:root:=============== TURN 195 ================
+INFO:root:1 wanted to move to 008, 6 but could not because of False fuel and True
+INFO:root:2 will move to position 005, 0
+INFO:root:{'008, 5', '005, 0'} current status
+INFO:root:0 will move to position 010, 16
+INFO:root:{'010, 16', '008, 5', '005, 0'} current status
 INFO:root:=============== TURN 196 ================
+INFO:root:2 will move to position 006, 0
+INFO:root:{'006, 0'} current status
+INFO:root:0 will move to position 009, 16
+INFO:root:{'006, 0', '009, 16'} current status
+INFO:root:1 will move to position 008, 6
+INFO:root:{'006, 0', '009, 16', '008, 6'} current status
 INFO:root:=============== TURN 197 ================
+INFO:root:0 will move to position 008, 16
+INFO:root:{'008, 16'} current status
+INFO:root:2 will move to position 006, 1
+INFO:root:{'008, 16', '006, 1'} current status
+INFO:root:1 will move to position 008, 7
+INFO:root:{'008, 7', '008, 16', '006, 1'} current status
 INFO:root:=============== TURN 198 ================
+INFO:root:2 will move to position 006, 2
+INFO:root:{'006, 2'} current status
+INFO:root:0 will move to position 008, 15
+INFO:root:{'006, 2', '008, 15'} current status
+INFO:root:1 will move to position 008, 8
+INFO:root:{'008, 8', '006, 2', '008, 15'} current status
 INFO:root:=============== TURN 199 ================
+INFO:root:0 wanted to move to 008, 14 but could not because of False fuel and True
+INFO:root:2 will move to position 007, 2
+INFO:root:{'007, 2', '008, 15'} current status
+INFO:root:1 will move to position 008, 9
+INFO:root:{'007, 2', '008, 9', '008, 15'} current status
 INFO:root:=============== TURN 200 ================
+INFO:root:2 will move to position 007, 3
+INFO:root:{'007, 3'} current status
+INFO:root:1 wanted to move to 008, 10 but could not because of False fuel and True
+INFO:root:0 will move to position 008, 14
+INFO:root:{'008, 14', '007, 3', '008, 9'} current status
 INFO:root:=============== TURN 201 ================
+INFO:root:2 will move to position 007, 4
+INFO:root:{'007, 4'} current status
+INFO:root:0 will move to position 008, 13
+INFO:root:{'008, 13', '007, 4'} current status
+INFO:root:1 will move to position 008, 10
+INFO:root:{'008, 13', '007, 4', '008, 10'} current status
 INFO:root:=============== TURN 202 ================
+INFO:root:0 wanted to move to 008, 12 but could not because of False fuel and True
+INFO:root:2 will move to position 008, 4
+INFO:root:{'008, 13', '008, 4'} current status
+INFO:root:1 will move to position 008, 11
+INFO:root:{'008, 13', '008, 11', '008, 4'} current status
 INFO:root:=============== TURN 203 ================
+INFO:root:2 will move to position 008, 5
+INFO:root:{'008, 5'} current status
+INFO:root:1 will move to position 008, 12
+INFO:root:{'008, 12', '008, 5'} current status
+INFO:root:0 wanted to move to 008, 12 but could not because of True fuel and False
 INFO:root:=============== TURN 204 ================
+INFO:root:2 wanted to move to 008, 6 but could not because of False fuel and True
+INFO:root:1 will move to position 008, 13
+INFO:root:{'008, 13', '008, 5'} current status
+INFO:root:0 will move to position 008, 12
+INFO:root:{'008, 13', '008, 5', '008, 12'} current status
 INFO:root:=============== TURN 205 ================
+INFO:root:1 will move to position 008, 14
+INFO:root:{'008, 14'} current status
+INFO:root:0 will move to position 008, 11
+INFO:root:{'008, 14', '008, 11'} current status
+INFO:root:2 will move to position 008, 6
+INFO:root:{'008, 14', '008, 6', '008, 11'} current status
 INFO:root:=============== TURN 206 ================
+INFO:root:0 will move to position 008, 10
+INFO:root:{'008, 10'} current status
+INFO:root:1 will move to position 008, 15
+INFO:root:{'008, 10', '008, 15'} current status
+INFO:root:2 will move to position 008, 7
+INFO:root:{'008, 7', '008, 10', '008, 15'} current status
 INFO:root:=============== TURN 207 ================
+INFO:root:1 will move to position 008, 16
+INFO:root:{'008, 16'} current status
+INFO:root:0 will move to position 008, 9
+INFO:root:{'008, 16', '008, 9'} current status
+INFO:root:2 will move to position 008, 8
+INFO:root:{'008, 8', '008, 16', '008, 9'} current status
 INFO:root:=============== TURN 208 ================
+INFO:root:0 will move to position 008, 8
+INFO:root:{'008, 8'} current status
+INFO:root:1 will move to position 009, 16
+INFO:root:{'009, 16', '008, 8'} current status
+INFO:root:2 will move to position 008, 9
+INFO:root:{'009, 16', '008, 8', '008, 9'} current status
 INFO:root:=============== TURN 209 ================
+INFO:root:1 wanted to move to 010, 16 but could not because of False fuel and True
+INFO:root:0 wanted to move to 008, 7 but could not because of False fuel and True
+INFO:root:2 wanted to move to 008, 10 but could not because of False fuel and True
 INFO:root:=============== TURN 210 ================
+INFO:root:1 will move to position 010, 16
+INFO:root:{'010, 16'} current status
+INFO:root:0 will move to position 008, 7
+INFO:root:{'010, 16', '008, 7'} current status
+INFO:root:2 will move to position 008, 10
+INFO:root:{'010, 16', '008, 7', '008, 10'} current status
 INFO:root:=============== TURN 211 ================
+INFO:root:0 will move to position 008, 6
+INFO:root:{'008, 6'} current status
+INFO:root:1 wanted to move to 011, 16 but could not because of False fuel and True
+INFO:root:2 will move to position 008, 11
+INFO:root:{'010, 16', '008, 6', '008, 11'} current status
 INFO:root:=============== TURN 212 ================
+INFO:root:0 will move to position 008, 5
+INFO:root:{'008, 5'} current status
+INFO:root:2 will move to position 008, 12
+INFO:root:{'008, 12', '008, 5'} current status
+INFO:root:1 will move to position 011, 16
+INFO:root:{'008, 12', '008, 5', '011, 16'} current status
 INFO:root:=============== TURN 213 ================
+INFO:root:2 will move to position 008, 13
+INFO:root:{'008, 13'} current status
+INFO:root:0 will move to position 008, 4
+INFO:root:{'008, 13', '008, 4'} current status
+INFO:root:1 will move to position 012, 16
+INFO:root:{'008, 13', '012, 16', '008, 4'} current status
 INFO:root:=============== TURN 214 ================
+INFO:root:0 wanted to move to 007, 4 but could not because of False fuel and True
+INFO:root:2 will move to position 008, 14
+INFO:root:{'008, 14', '008, 4'} current status
+INFO:root:1 will move to position 012, 17
+INFO:root:{'008, 14', '008, 4', '012, 17'} current status
 INFO:root:=============== TURN 215 ================
+INFO:root:2 wanted to move to 008, 15 but could not because of False fuel and True
+INFO:root:1 will move to position 013, 17
+INFO:root:{'008, 14', '013, 17'} current status
+INFO:root:0 will move to position 007, 4
+INFO:root:{'008, 14', '013, 17', '007, 4'} current status
 INFO:root:=============== TURN 216 ================
+INFO:root:1 wanted to move to 014, 17 but could not because of False fuel and True
+INFO:root:0 will move to position 007, 3
+INFO:root:{'013, 17', '007, 3'} current status
+INFO:root:2 will move to position 008, 15
+INFO:root:{'013, 17', '007, 3', '008, 15'} current status
 INFO:root:=============== TURN 217 ================
+INFO:root:0 will move to position 007, 2
+INFO:root:{'007, 2'} current status
+INFO:root:2 will move to position 008, 16
+INFO:root:{'008, 16', '007, 2'} current status
+INFO:root:1 will move to position 014, 17
+INFO:root:{'008, 16', '014, 17', '007, 2'} current status
 INFO:root:=============== TURN 218 ================
+INFO:root:2 will move to position 009, 16
+INFO:root:{'009, 16'} current status
+INFO:root:0 will move to position 006, 2
+INFO:root:{'009, 16', '006, 2'} current status
+INFO:root:1 wanted to move to 015, 17 but could not because of False fuel and True
 INFO:root:=============== TURN 219 ================
+INFO:root:2 wanted to move to 010, 16 but could not because of False fuel and True
+INFO:root:0 will move to position 006, 1
+INFO:root:{'009, 16', '006, 1'} current status
+INFO:root:1 will move to position 015, 17
+INFO:root:{'009, 16', '015, 17', '006, 1'} current status
 INFO:root:=============== TURN 220 ================
+INFO:root:0 will move to position 006, 0
+INFO:root:{'006, 0'} current status
+INFO:root:got best node 031, 16
+INFO:root:1 will move to position 014, 17
+INFO:root:{'006, 0', '014, 17'} current status
+INFO:root:2 will move to position 010, 16
+INFO:root:{'006, 0', '014, 17', '010, 16'} current status
 INFO:root:=============== TURN 221 ================
+INFO:root:1 will move to position 013, 17
+INFO:root:{'013, 17'} current status
+INFO:root:0 will move to position 005, 0
+INFO:root:{'013, 17', '005, 0'} current status
+INFO:root:2 wanted to move to 011, 16 but could not because of False fuel and True
 INFO:root:=============== TURN 222 ================
+INFO:root:1 will move to position 012, 17
+INFO:root:{'012, 17'} current status
+INFO:root:0 will move to position 004, 0
+INFO:root:{'012, 17', '004, 0'} current status
+INFO:root:2 will move to position 011, 16
+INFO:root:{'011, 16', '012, 17', '004, 0'} current status
 INFO:root:=============== TURN 223 ================
+INFO:root:0 wanted to move to 003, 0 but could not because of False fuel and True
+INFO:root:1 wanted to move to 012, 16 but could not because of False fuel and True
+INFO:root:2 will move to position 012, 16
+INFO:root:{'012, 17', '004, 0', '012, 16'} current status
 INFO:root:=============== TURN 224 ================
+INFO:root:2 will move to position 012, 17
+INFO:root:{'012, 17'} current status
+INFO:root:0 will move to position 003, 0
+INFO:root:{'003, 0', '012, 17'} current status
+INFO:root:1 will move to position 012, 16
+INFO:root:{'003, 0', '012, 17', '012, 16'} current status
 INFO:root:=============== TURN 225 ================
+INFO:root:0 will move to position 002, 0
+INFO:root:{'002, 0'} current status
+INFO:root:2 wanted to move to 013, 17 but could not because of False fuel and True
+INFO:root:1 will move to position 011, 16
+INFO:root:{'011, 16', '012, 17', '002, 0'} current status
 INFO:root:=============== TURN 226 ================
+INFO:root:0 will move to position 002, 31
+INFO:root:{'002, 31'} current status
+INFO:root:1 will move to position 010, 16
+INFO:root:{'010, 16', '002, 31'} current status
+INFO:root:2 will move to position 013, 17
+INFO:root:{'010, 16', '013, 17', '002, 31'} current status
 INFO:root:=============== TURN 227 ================
+INFO:root:1 will move to position 009, 16
+INFO:root:{'009, 16'} current status
+INFO:root:0 wanted to move to 002, 30 but could not because of False fuel and True
+INFO:root:2 will move to position 014, 17
+INFO:root:{'009, 16', '002, 31', '014, 17'} current status
 INFO:root:=============== TURN 228 ================
+INFO:root:1 will move to position 008, 16
+INFO:root:{'008, 16'} current status
+INFO:root:2 wanted to move to 015, 17 but could not because of False fuel and True
+INFO:root:0 will move to position 002, 30
+INFO:root:{'008, 16', '002, 30', '014, 17'} current status
 INFO:root:=============== TURN 229 ================
+INFO:root:1 will move to position 008, 15
+INFO:root:{'008, 15'} current status
+INFO:root:0 will move to position 002, 29
+INFO:root:{'002, 29', '008, 15'} current status
+INFO:root:2 will move to position 015, 17
+INFO:root:{'015, 17', '002, 29', '008, 15'} current status
 INFO:root:=============== TURN 230 ================
+INFO:root:0 will move to position 002, 28
+INFO:root:{'002, 28'} current status
+INFO:root:1 wanted to move to 007, 15 but could not because of False fuel and True
+INFO:root:got best node 031, 16
+INFO:root:2 wanted to move to 014, 17 but could not because of False fuel and True
 INFO:root:=============== TURN 231 ================
+INFO:root:0 wanted to move to 002, 27 but could not because of False fuel and True
+INFO:root:1 will move to position 007, 15
+INFO:root:{'002, 28', '007, 15'} current status
+INFO:root:2 will move to position 014, 17
+INFO:root:{'002, 28', '007, 15', '014, 17'} current status
 INFO:root:=============== TURN 232 ================
+INFO:root:1 will move to position 006, 15
+INFO:root:{'006, 15'} current status
+INFO:root:2 will move to position 013, 17
+INFO:root:{'013, 17', '006, 15'} current status
+INFO:root:0 will move to position 002, 27
+INFO:root:{'002, 27', '013, 17', '006, 15'} current status
 INFO:root:=============== TURN 233 ================
+INFO:root:2 will move to position 012, 17
+INFO:root:{'012, 17'} current status
+INFO:root:1 wanted to move to 005, 15 but could not because of False fuel and True
+INFO:root:0 will move to position 002, 26
+INFO:root:{'002, 26', '012, 17', '006, 15'} current status
 INFO:root:=============== TURN 234 ================
+INFO:root:2 will move to position 012, 16
+INFO:root:{'012, 16'} current status
+INFO:root:0 wanted to move to 002, 25 but could not because of False fuel and True
+INFO:root:1 will move to position 005, 15
+INFO:root:{'002, 26', '012, 16', '005, 15'} current status
 INFO:root:=============== TURN 235 ================
+INFO:root:2 will move to position 011, 16
+INFO:root:{'011, 16'} current status
+INFO:root:1 will move to position 004, 15
+INFO:root:{'004, 15', '011, 16'} current status
+INFO:root:0 will move to position 002, 25
+INFO:root:{'004, 15', '002, 25', '011, 16'} current status
 INFO:root:=============== TURN 236 ================
+INFO:root:1 will move to position 003, 15
+INFO:root:{'003, 15'} current status
+INFO:root:2 will move to position 010, 16
+INFO:root:{'010, 16', '003, 15'} current status
+INFO:root:0 will move to position 001, 25
+INFO:root:{'010, 16', '001, 25', '003, 15'} current status
 INFO:root:=============== TURN 237 ================
+INFO:root:2 will move to position 009, 16
+INFO:root:{'009, 16'} current status
+INFO:root:1 wanted to move to 002, 15 but could not because of False fuel and True
+INFO:root:0 will move to position 001, 24
+INFO:root:{'009, 16', '003, 15', '001, 24'} current status
 INFO:root:=============== TURN 238 ================
+INFO:root:2 will move to position 008, 16
+INFO:root:{'008, 16'} current status
+INFO:root:0 will move to position 000, 24
+INFO:root:{'008, 16', '000, 24'} current status
+INFO:root:1 will move to position 002, 15
+INFO:root:{'008, 16', '002, 15', '000, 24'} current status
 INFO:root:=============== TURN 239 ================
+INFO:root:0 wanted to move to 000, 23 but could not because of False fuel and True
+INFO:root:2 will move to position 008, 15
+INFO:root:{'008, 15', '000, 24'} current status
+INFO:root:1 will move to position 001, 15
+INFO:root:{'008, 15', '001, 15', '000, 24'} current status
 INFO:root:=============== TURN 240 ================
+INFO:root:2 wanted to move to 007, 15 but could not because of False fuel and True
+INFO:root:1 will move to position 000, 15
+INFO:root:{'000, 15', '008, 15'} current status
+INFO:root:0 will move to position 000, 23
+INFO:root:{'000, 15', '000, 23', '008, 15'} current status
 INFO:root:=============== TURN 241 ================
+INFO:root:1 wanted to move to 031, 15 but could not because of False fuel and True
+INFO:root:0 will move to position 031, 23
+INFO:root:{'031, 23', '000, 15'} current status
+INFO:root:2 will move to position 007, 15
+INFO:root:{'007, 15', '031, 23', '000, 15'} current status
 INFO:root:=============== TURN 242 ================
+INFO:root:0 will move to position 031, 22
+INFO:root:{'031, 22'} current status
+INFO:root:2 wanted to move to 006, 15 but could not because of False fuel and True
+INFO:root:1 will move to position 031, 15
+INFO:root:{'031, 22', '007, 15', '031, 15'} current status
 INFO:root:=============== TURN 243 ================
+INFO:root:0 wanted to move to 030, 22 but could not because of False fuel and True
+INFO:root:1 will move to position 031, 16
+INFO:root:{'031, 22', '031, 16'} current status
+INFO:root:2 will move to position 006, 15
+INFO:root:{'031, 22', '031, 16', '006, 15'} current status
 INFO:root:=============== TURN 244 ================
+INFO:root:got best node 012, 12
+INFO:root:1 wanted to move to 031, 15 but could not because of False fuel and True
+INFO:root:2 wanted to move to 005, 15 but could not because of False fuel and True
+INFO:root:0 will move to position 030, 22
+INFO:root:{'031, 16', '006, 15', '030, 22'} current status
 INFO:root:=============== TURN 245 ================
+INFO:root:0 will move to position 029, 22
+INFO:root:{'029, 22'} current status
+INFO:root:1 will move to position 031, 15
+INFO:root:{'029, 22', '031, 15'} current status
+INFO:root:2 will move to position 005, 15
+INFO:root:{'029, 22', '005, 15', '031, 15'} current status
 INFO:root:=============== TURN 246 ================
+INFO:root:1 will move to position 000, 15
+INFO:root:{'000, 15'} current status
+INFO:root:0 wanted to move to 028, 22 but could not because of False fuel and True
+INFO:root:2 will move to position 004, 15
+INFO:root:{'004, 15', '029, 22', '000, 15'} current status
 INFO:root:=============== TURN 247 ================
+INFO:root:1 will move to position 001, 15
+INFO:root:{'001, 15'} current status
+INFO:root:2 will move to position 003, 15
+INFO:root:{'001, 15', '003, 15'} current status
+INFO:root:0 will move to position 028, 22
+INFO:root:{'028, 22', '001, 15', '003, 15'} current status
 INFO:root:=============== TURN 248 ================
+INFO:root:2 will move to position 002, 15
+INFO:root:{'002, 15'} current status
+INFO:root:1 wanted to move to 002, 15 but could not because of True fuel and False
+INFO:root:0 will move to position 027, 22
+INFO:root:{'027, 22', '001, 15', '002, 15'} current status
 INFO:root:=============== TURN 249 ================
+INFO:root:2 wanted to move to 001, 15 but could not because of False fuel and True
+INFO:root:got best node 004, 12
+INFO:root:0 wanted to move to 028, 22 but could not because of False fuel and True
+INFO:root:1 wanted to move to 002, 15 but could not because of True fuel and False
 INFO:root:=============== TURN 250 ================
-INFO:root:got best node 008, 16
+INFO:root:2 will move to position 001, 15
+INFO:root:{'001, 15'} current status
+INFO:root:0 will move to position 028, 22
+INFO:root:{'028, 22', '001, 15'} current status
+INFO:root:1 will move to position 002, 15
+INFO:root:{'028, 22', '001, 15', '002, 15'} current status
 INFO:root:=============== TURN 251 ================
+INFO:root:0 will move to position 029, 22
+INFO:root:{'029, 22'} current status
+INFO:root:2 will move to position 000, 15
+INFO:root:{'029, 22', '000, 15'} current status
+INFO:root:1 will move to position 003, 15
+INFO:root:{'029, 22', '000, 15', '003, 15'} current status
 INFO:root:=============== TURN 252 ================
+INFO:root:2 will move to position 031, 15
+INFO:root:{'031, 15'} current status
+INFO:root:0 will move to position 030, 22
+INFO:root:{'031, 15', '030, 22'} current status
+INFO:root:1 will move to position 004, 15
+INFO:root:{'004, 15', '031, 15', '030, 22'} current status
 INFO:root:=============== TURN 253 ================
+INFO:root:0 will move to position 031, 22
+INFO:root:{'031, 22'} current status
+INFO:root:1 will move to position 005, 15
+INFO:root:{'031, 22', '005, 15'} current status
+INFO:root:2 wanted to move to 031, 16 but could not because of False fuel and True
 INFO:root:=============== TURN 254 ================
+INFO:root:0 will move to position 031, 23
+INFO:root:{'031, 23'} current status
+INFO:root:1 will move to position 006, 15
+INFO:root:{'031, 23', '006, 15'} current status
+INFO:root:2 will move to position 031, 16
+INFO:root:{'031, 23', '031, 16', '006, 15'} current status
 INFO:root:=============== TURN 255 ================
+INFO:root:1 will move to position 007, 15
+INFO:root:{'007, 15'} current status
+INFO:root:0 will move to position 000, 23
+INFO:root:{'007, 15', '000, 23'} current status
+INFO:root:got best node 012, 12
+INFO:root:2 will move to position 031, 15
+INFO:root:{'007, 15', '031, 15', '000, 23'} current status
 INFO:root:=============== TURN 256 ================
+INFO:root:0 will move to position 000, 24
+INFO:root:{'000, 24'} current status
+INFO:root:1 will move to position 008, 15
+INFO:root:{'008, 15', '000, 24'} current status
+INFO:root:2 wanted to move to 000, 15 but could not because of False fuel and True
 INFO:root:=============== TURN 257 ================
+INFO:root:0 will move to position 001, 24
+INFO:root:{'001, 24'} current status
+INFO:root:1 will move to position 008, 14
+INFO:root:{'008, 14', '001, 24'} current status
+INFO:root:2 will move to position 000, 15
+INFO:root:{'008, 14', '000, 15', '001, 24'} current status
 INFO:root:=============== TURN 258 ================
+INFO:root:1 will move to position 008, 13
+INFO:root:{'008, 13'} current status
+INFO:root:0 will move to position 001, 25
+INFO:root:{'001, 25', '008, 13'} current status
+INFO:root:2 will move to position 001, 15
+INFO:root:{'001, 25', '008, 13', '001, 15'} current status
 INFO:root:=============== TURN 259 ================
+INFO:root:0 will move to position 002, 25
+INFO:root:{'002, 25'} current status
+INFO:root:1 will move to position 008, 12
+INFO:root:{'008, 12', '002, 25'} current status
+INFO:root:2 will move to position 002, 15
+INFO:root:{'008, 12', '002, 25', '002, 15'} current status
 INFO:root:=============== TURN 260 ================
+INFO:root:1 will move to position 009, 12
+INFO:root:{'009, 12'} current status
+INFO:root:0 will move to position 002, 26
+INFO:root:{'002, 26', '009, 12'} current status
+INFO:root:2 wanted to move to 003, 15 but could not because of False fuel and True
 INFO:root:=============== TURN 261 ================
+INFO:root:1 will move to position 010, 12
+INFO:root:{'010, 12'} current status
+INFO:root:0 will move to position 002, 27
+INFO:root:{'002, 27', '010, 12'} current status
+INFO:root:2 will move to position 003, 15
+INFO:root:{'002, 27', '003, 15', '010, 12'} current status
 INFO:root:=============== TURN 262 ================
+INFO:root:0 will move to position 002, 28
+INFO:root:{'002, 28'} current status
+INFO:root:1 will move to position 011, 12
+INFO:root:{'002, 28', '011, 12'} current status
+INFO:root:2 will move to position 004, 15
+INFO:root:{'002, 28', '004, 15', '011, 12'} current status
 INFO:root:=============== TURN 263 ================
+INFO:root:1 will move to position 012, 12
+INFO:root:{'012, 12'} current status
+INFO:root:0 will move to position 002, 29
+INFO:root:{'002, 29', '012, 12'} current status
+INFO:root:2 will move to position 005, 15
+INFO:root:{'005, 15', '002, 29', '012, 12'} current status
 INFO:root:=============== TURN 264 ================
+INFO:root:0 will move to position 002, 30
+INFO:root:{'002, 30'} current status
+INFO:root:got best node 029, 17
+INFO:root:1 will move to position 011, 12
+INFO:root:{'011, 12', '002, 30'} current status
+INFO:root:2 will move to position 006, 15
+INFO:root:{'011, 12', '006, 15', '002, 30'} current status
 INFO:root:=============== TURN 265 ================
+INFO:root:1 wanted to move to 010, 12 but could not because of False fuel and True
+INFO:root:0 will move to position 002, 31
+INFO:root:{'011, 12', '002, 31'} current status
+INFO:root:2 wanted to move to 007, 15 but could not because of False fuel and True
 INFO:root:=============== TURN 266 ================
+INFO:root:0 wanted to move to 002, 0 but could not because of False fuel and True
+INFO:root:1 will move to position 010, 12
+INFO:root:{'002, 31', '010, 12'} current status
+INFO:root:2 will move to position 007, 15
+INFO:root:{'007, 15', '002, 31', '010, 12'} current status
 INFO:root:=============== TURN 267 ================
+INFO:root:1 will move to position 009, 12
+INFO:root:{'009, 12'} current status
+INFO:root:2 will move to position 008, 15
+INFO:root:{'009, 12', '008, 15'} current status
+INFO:root:0 will move to position 002, 0
+INFO:root:{'002, 0', '009, 12', '008, 15'} current status
 INFO:root:=============== TURN 268 ================
+INFO:root:2 will move to position 008, 14
+INFO:root:{'008, 14'} current status
+INFO:root:1 will move to position 008, 12
+INFO:root:{'008, 12', '008, 14'} current status
+INFO:root:0 will move to position 003, 0
+INFO:root:{'008, 12', '008, 14', '003, 0'} current status
 INFO:root:=============== TURN 269 ================
+INFO:root:1 will move to position 008, 11
+INFO:root:{'008, 11'} current status
+INFO:root:2 will move to position 008, 13
+INFO:root:{'008, 13', '008, 11'} current status
+INFO:root:0 will move to position 004, 0
+INFO:root:{'008, 13', '004, 0', '008, 11'} current status
 INFO:root:=============== TURN 270 ================
+INFO:root:2 will move to position 008, 12
+INFO:root:{'008, 12'} current status
+INFO:root:1 will move to position 008, 10
+INFO:root:{'008, 12', '008, 10'} current status
+INFO:root:0 will move to position 005, 0
+INFO:root:{'008, 12', '005, 0', '008, 10'} current status
 INFO:root:=============== TURN 271 ================
+INFO:root:1 will move to position 008, 9
+INFO:root:{'008, 9'} current status
+INFO:root:2 will move to position 009, 12
+INFO:root:{'009, 12', '008, 9'} current status
+INFO:root:0 will move to position 006, 0
+INFO:root:{'006, 0', '009, 12', '008, 9'} current status
 INFO:root:=============== TURN 272 ================
+INFO:root:2 will move to position 010, 12
+INFO:root:{'010, 12'} current status
+INFO:root:0 will move to position 006, 1
+INFO:root:{'006, 1', '010, 12'} current status
+INFO:root:1 will move to position 008, 8
+INFO:root:{'008, 8', '006, 1', '010, 12'} current status
 INFO:root:=============== TURN 273 ================
+INFO:root:0 will move to position 006, 2
+INFO:root:{'006, 2'} current status
+INFO:root:2 will move to position 011, 12
+INFO:root:{'011, 12', '006, 2'} current status
+INFO:root:1 will move to position 008, 7
+INFO:root:{'008, 7', '011, 12', '006, 2'} current status
 INFO:root:=============== TURN 274 ================
+INFO:root:2 wanted to move to 012, 12 but could not because of False fuel and True
+INFO:root:0 will move to position 007, 2
+INFO:root:{'011, 12', '007, 2'} current status
+INFO:root:1 will move to position 008, 6
+INFO:root:{'011, 12', '008, 6', '007, 2'} current status
 INFO:root:=============== TURN 275 ================
+INFO:root:0 will move to position 007, 3
+INFO:root:{'007, 3'} current status
+INFO:root:1 will move to position 008, 5
+INFO:root:{'008, 5', '007, 3'} current status
+INFO:root:2 will move to position 012, 12
+INFO:root:{'008, 5', '007, 3', '012, 12'} current status
 INFO:root:=============== TURN 276 ================
+INFO:root:1 will move to position 008, 4
+INFO:root:{'008, 4'} current status
+INFO:root:got best node 029, 17
+INFO:root:2 wanted to move to 011, 12 but could not because of False fuel and True
+INFO:root:0 will move to position 007, 4
+INFO:root:{'008, 4', '012, 12', '007, 4'} current status
 INFO:root:=============== TURN 277 ================
+INFO:root:1 will move to position 007, 4
+INFO:root:{'007, 4'} current status
+INFO:root:0 will move to position 008, 4
+INFO:root:{'007, 4', '008, 4'} current status
+INFO:root:2 will move to position 011, 12
+INFO:root:{'007, 4', '011, 12', '008, 4'} current status
 INFO:root:=============== TURN 278 ================
+INFO:root:0 wanted to move to 008, 5 but could not because of False fuel and True
+INFO:root:1 will move to position 007, 3
+INFO:root:{'008, 4', '007, 3'} current status
+INFO:root:2 will move to position 010, 12
+INFO:root:{'008, 4', '007, 3', '010, 12'} current status
 INFO:root:=============== TURN 279 ================
+INFO:root:1 will move to position 007, 2
+INFO:root:{'007, 2'} current status
+INFO:root:2 will move to position 009, 12
+INFO:root:{'009, 12', '007, 2'} current status
+INFO:root:0 will move to position 008, 5
+INFO:root:{'008, 5', '009, 12', '007, 2'} current status
 INFO:root:=============== TURN 280 ================
+INFO:root:2 will move to position 008, 12
+INFO:root:{'008, 12'} current status
+INFO:root:1 will move to position 006, 2
+INFO:root:{'008, 12', '006, 2'} current status
+INFO:root:0 will move to position 008, 6
+INFO:root:{'008, 12', '006, 2', '008, 6'} current status
 INFO:root:=============== TURN 281 ================
+INFO:root:1 will move to position 006, 1
+INFO:root:{'006, 1'} current status
+INFO:root:2 will move to position 008, 11
+INFO:root:{'006, 1', '008, 11'} current status
+INFO:root:0 wanted to move to 008, 7 but could not because of False fuel and True
 INFO:root:=============== TURN 282 ================
+INFO:root:1 will move to position 006, 0
+INFO:root:{'006, 0'} current status
+INFO:root:2 will move to position 008, 10
+INFO:root:{'006, 0', '008, 10'} current status
+INFO:root:0 will move to position 008, 7
+INFO:root:{'006, 0', '008, 7', '008, 10'} current status
 INFO:root:=============== TURN 283 ================
+INFO:root:2 will move to position 008, 9
+INFO:root:{'008, 9'} current status
+INFO:root:1 will move to position 005, 0
+INFO:root:{'008, 9', '005, 0'} current status
+INFO:root:0 will move to position 008, 8
+INFO:root:{'008, 8', '008, 9', '005, 0'} current status
 INFO:root:=============== TURN 284 ================
+INFO:root:1 will move to position 004, 0
+INFO:root:{'004, 0'} current status
+INFO:root:2 will move to position 008, 8
+INFO:root:{'008, 8', '004, 0'} current status
+INFO:root:0 wanted to move to 008, 9 but could not because of False fuel and True
 INFO:root:=============== TURN 285 ================
+INFO:root:1 will move to position 003, 0
+INFO:root:{'003, 0'} current status
 INFO:root:=============== TURN 286 ================
+INFO:root:1 wanted to move to 002, 0 but could not because of False fuel and True
 INFO:root:=============== TURN 287 ================
+INFO:root:1 will move to position 002, 0
+INFO:root:{'002, 0'} current status
 INFO:root:=============== TURN 288 ================
+INFO:root:1 will move to position 001, 0
+INFO:root:{'001, 0'} current status
 INFO:root:=============== TURN 289 ================
+INFO:root:1 will move to position 000, 0
+INFO:root:{'000, 0'} current status
 INFO:root:=============== TURN 290 ================
+INFO:root:1 will move to position 031, 0
+INFO:root:{'031, 0'} current status
 INFO:root:=============== TURN 291 ================
+INFO:root:1 will move to position 030, 0
+INFO:root:{'030, 0'} current status
 INFO:root:=============== TURN 292 ================
+INFO:root:1 will move to position 029, 0
+INFO:root:{'029, 0'} current status
 INFO:root:=============== TURN 293 ================
+INFO:root:1 will move to position 028, 0
+INFO:root:{'028, 0'} current status
 INFO:root:=============== TURN 294 ================
+INFO:root:1 wanted to move to 027, 0 but could not because of False fuel and True
 INFO:root:=============== TURN 295 ================
+INFO:root:1 will move to position 027, 0
+INFO:root:{'027, 0'} current status
 INFO:root:=============== TURN 296 ================
+INFO:root:1 will move to position 026, 0
+INFO:root:{'026, 0'} current status
 INFO:root:=============== TURN 297 ================
+INFO:root:1 will move to position 025, 0
+INFO:root:{'025, 0'} current status
 INFO:root:=============== TURN 298 ================
+INFO:root:1 will move to position 025, 1
+INFO:root:{'025, 1'} current status
 INFO:root:=============== TURN 299 ================
+INFO:root:1 will move to position 025, 2
+INFO:root:{'025, 2'} current status
 INFO:root:=============== TURN 300 ================
+INFO:root:1 will move to position 024, 2
+INFO:root:{'024, 2'} current status
 INFO:root:=============== TURN 301 ================
+INFO:root:1 will move to position 024, 3
+INFO:root:{'024, 3'} current status
 INFO:root:=============== TURN 302 ================
+INFO:root:1 will move to position 024, 4
+INFO:root:{'024, 4'} current status
 INFO:root:=============== TURN 303 ================
+INFO:root:1 wanted to move to 023, 4 but could not because of False fuel and True
 INFO:root:=============== TURN 304 ================
+INFO:root:1 will move to position 023, 4
+INFO:root:{'023, 4'} current status
 INFO:root:=============== TURN 305 ================
-INFO:root:got best node 008, 16
+INFO:root:1 will move to position 023, 5
+INFO:root:{'023, 5'} current status
 INFO:root:=============== TURN 306 ================
+INFO:root:1 wanted to move to 023, 6 but could not because of False fuel and True
 INFO:root:=============== TURN 307 ================
+INFO:root:1 will move to position 023, 6
+INFO:root:{'023, 6'} current status
 INFO:root:=============== TURN 308 ================
+INFO:root:1 will move to position 023, 7
+INFO:root:{'023, 7'} current status
 INFO:root:=============== TURN 309 ================
+INFO:root:1 will move to position 023, 8
+INFO:root:{'023, 8'} current status
 INFO:root:=============== TURN 310 ================
-INFO:root:got best node 008, 16
+INFO:root:1 will move to position 023, 9
+INFO:root:{'023, 9'} current status
 INFO:root:=============== TURN 311 ================
+INFO:root:1 will move to position 023, 10
+INFO:root:{'023, 10'} current status
 INFO:root:=============== TURN 312 ================
+INFO:root:1 will move to position 023, 11
+INFO:root:{'023, 11'} current status
 INFO:root:=============== TURN 313 ================
+INFO:root:1 will move to position 023, 12
+INFO:root:{'023, 12'} current status
 INFO:root:=============== TURN 314 ================
-INFO:root:got best node 008, 16
+INFO:root:1 will move to position 023, 13
+INFO:root:{'023, 13'} current status
 INFO:root:=============== TURN 315 ================
+INFO:root:1 wanted to move to 023, 14 but could not because of False fuel and True
 INFO:root:=============== TURN 316 ================
+INFO:root:1 will move to position 023, 14
+INFO:root:{'023, 14'} current status
 INFO:root:=============== TURN 317 ================
+INFO:root:1 wanted to move to 023, 15 but could not because of False fuel and True
 INFO:root:=============== TURN 318 ================
+INFO:root:1 will move to position 023, 15
+INFO:root:{'023, 15'} current status
 INFO:root:=============== TURN 319 ================
+INFO:root:1 will move to position 024, 15
+INFO:root:{'024, 15'} current status
 INFO:root:=============== TURN 320 ================
+INFO:root:1 will move to position 025, 15
+INFO:root:{'025, 15'} current status
 INFO:root:=============== TURN 321 ================
+INFO:root:1 wanted to move to 026, 15 but could not because of False fuel and True
 INFO:root:=============== TURN 322 ================
+INFO:root:1 will move to position 026, 15
+INFO:root:{'026, 15'} current status
 INFO:root:=============== TURN 323 ================
+INFO:root:1 will move to position 027, 15
+INFO:root:{'027, 15'} current status
 INFO:root:=============== TURN 324 ================
+INFO:root:1 will move to position 027, 16
+INFO:root:{'027, 16'} current status
 INFO:root:=============== TURN 325 ================
+INFO:root:1 will move to position 027, 17
+INFO:root:{'027, 17'} current status
 INFO:root:=============== TURN 326 ================
+INFO:root:1 wanted to move to 028, 17 but could not because of False fuel and True
 INFO:root:=============== TURN 327 ================
+INFO:root:1 will move to position 028, 17
+INFO:root:{'028, 17'} current status
 INFO:root:=============== TURN 328 ================
+INFO:root:1 will move to position 029, 17
+INFO:root:{'029, 17'} current status
 INFO:root:=============== TURN 329 ================
+INFO:root:got best node 008, 22
+INFO:root:1 wanted to move to 029, 16 but could not because of False fuel and True
 INFO:root:=============== TURN 330 ================
+INFO:root:1 will move to position 029, 16
+INFO:root:{'029, 16'} current status
 INFO:root:=============== TURN 331 ================
+INFO:root:1 will move to position 029, 15
+INFO:root:{'029, 15'} current status
 INFO:root:=============== TURN 332 ================
+INFO:root:1 will move to position 030, 15
+INFO:root:{'030, 15'} current status
 INFO:root:=============== TURN 333 ================
+INFO:root:1 will move to position 031, 15
+INFO:root:{'031, 15'} current status
 INFO:root:=============== TURN 334 ================
+INFO:root:1 will move to position 000, 15
+INFO:root:{'000, 15'} current status
 INFO:root:=============== TURN 335 ================
+INFO:root:1 wanted to move to 001, 15 but could not because of False fuel and True
 INFO:root:=============== TURN 336 ================
+INFO:root:1 will move to position 001, 15
+INFO:root:{'001, 15'} current status
 INFO:root:=============== TURN 337 ================
+INFO:root:1 will move to position 002, 15
+INFO:root:{'002, 15'} current status
 INFO:root:=============== TURN 338 ================
+INFO:root:1 will move to position 003, 15
+INFO:root:{'003, 15'} current status
 INFO:root:=============== TURN 339 ================
+INFO:root:1 wanted to move to 004, 15 but could not because of False fuel and True
 INFO:root:=============== TURN 340 ================
+INFO:root:1 will move to position 004, 15
+INFO:root:{'004, 15'} current status
 INFO:root:=============== TURN 341 ================
+INFO:root:1 will move to position 005, 15
+INFO:root:{'005, 15'} current status
 INFO:root:=============== TURN 342 ================
+INFO:root:1 will move to position 006, 15
+INFO:root:{'006, 15'} current status
 INFO:root:=============== TURN 343 ================
+INFO:root:1 will move to position 007, 15
+INFO:root:{'007, 15'} current status
 INFO:root:=============== TURN 344 ================
+INFO:root:1 wanted to move to 008, 15 but could not because of False fuel and True
 INFO:root:=============== TURN 345 ================
+INFO:root:1 will move to position 008, 15
+INFO:root:{'008, 15'} current status
 INFO:root:=============== TURN 346 ================
+INFO:root:1 will move to position 008, 16
+INFO:root:{'008, 16'} current status
 INFO:root:=============== TURN 347 ================
+INFO:root:1 will move to position 009, 16
+INFO:root:{'009, 16'} current status
 INFO:root:=============== TURN 348 ================
+INFO:root:1 wanted to move to 010, 16 but could not because of False fuel and True
 INFO:root:=============== TURN 349 ================
+INFO:root:1 will move to position 010, 16
+INFO:root:{'010, 16'} current status
 INFO:root:=============== TURN 350 ================
+INFO:root:1 wanted to move to 010, 17 but could not because of False fuel and True
 INFO:root:=============== TURN 351 ================
+INFO:root:1 will move to position 010, 17
+INFO:root:{'010, 17'} current status
 INFO:root:=============== TURN 352 ================
+INFO:root:1 will move to position 010, 18
+INFO:root:{'010, 18'} current status
 INFO:root:=============== TURN 353 ================
+INFO:root:1 wanted to move to 010, 19 but could not because of False fuel and True
 INFO:root:=============== TURN 354 ================
+INFO:root:1 will move to position 010, 19
+INFO:root:{'010, 19'} current status
 INFO:root:=============== TURN 355 ================
+INFO:root:1 will move to position 010, 20
+INFO:root:{'010, 20'} current status
 INFO:root:=============== TURN 356 ================
+INFO:root:1 wanted to move to 010, 21 but could not because of False fuel and True
 INFO:root:=============== TURN 357 ================
+INFO:root:1 will move to position 010, 21
+INFO:root:{'010, 21'} current status
 INFO:root:=============== TURN 358 ================
+INFO:root:1 will move to position 010, 22
+INFO:root:{'010, 22'} current status
 INFO:root:=============== TURN 359 ================
+INFO:root:1 wanted to move to 009, 22 but could not because of False fuel and True
 INFO:root:=============== TURN 360 ================
+INFO:root:1 will move to position 009, 22
+INFO:root:{'009, 22'} current status
 INFO:root:=============== TURN 361 ================
+INFO:root:1 will move to position 008, 22
+INFO:root:{'008, 22'} current status
 INFO:root:=============== TURN 362 ================
+INFO:root:got best node 027, 12
+INFO:root:1 wanted to move to 009, 22 but could not because of False fuel and True
 INFO:root:=============== TURN 363 ================
+INFO:root:1 will move to position 009, 22
+INFO:root:{'009, 22'} current status
 INFO:root:=============== TURN 364 ================
+INFO:root:1 will move to position 010, 22
+INFO:root:{'010, 22'} current status
 INFO:root:=============== TURN 365 ================
+INFO:root:1 will move to position 010, 21
+INFO:root:{'010, 21'} current status
 INFO:root:=============== TURN 366 ================
+INFO:root:1 will move to position 010, 20
+INFO:root:{'010, 20'} current status
 INFO:root:=============== TURN 367 ================
+INFO:root:1 will move to position 010, 19
+INFO:root:{'010, 19'} current status
 INFO:root:=============== TURN 368 ================
+INFO:root:1 will move to position 010, 18
+INFO:root:{'010, 18'} current status
 INFO:root:=============== TURN 369 ================
+INFO:root:1 will move to position 010, 17
+INFO:root:{'010, 17'} current status
 INFO:root:=============== TURN 370 ================
+INFO:root:1 will move to position 010, 16
+INFO:root:{'010, 16'} current status
 INFO:root:=============== TURN 371 ================
+INFO:root:1 will move to position 009, 16
+INFO:root:{'009, 16'} current status
 INFO:root:=============== TURN 372 ================
+INFO:root:1 will move to position 008, 16
+INFO:root:{'008, 16'} current status
 INFO:root:=============== TURN 373 ================
+INFO:root:1 will move to position 008, 15
+INFO:root:{'008, 15'} current status
 INFO:root:=============== TURN 374 ================
+INFO:root:1 wanted to move to 008, 14 but could not because of False fuel and True
 INFO:root:=============== TURN 375 ================
+INFO:root:1 will move to position 008, 14
+INFO:root:{'008, 14'} current status
 INFO:root:=============== TURN 376 ================
+INFO:root:1 wanted to move to 008, 13 but could not because of False fuel and True
 INFO:root:=============== TURN 377 ================
+INFO:root:1 will move to position 008, 13
+INFO:root:{'008, 13'} current status
 INFO:root:=============== TURN 378 ================
+INFO:root:1 will move to position 008, 12
+INFO:root:{'008, 12'} current status
 INFO:root:=============== TURN 379 ================
+INFO:root:1 will move to position 008, 11
+INFO:root:{'008, 11'} current status
 INFO:root:=============== TURN 380 ================
+INFO:root:1 will move to position 008, 10
+INFO:root:{'008, 10'} current status
 INFO:root:=============== TURN 381 ================
+INFO:root:1 will move to position 008, 9
+INFO:root:{'008, 9'} current status
 INFO:root:=============== TURN 382 ================
+INFO:root:1 will move to position 008, 8
+INFO:root:{'008, 8'} current status
 INFO:root:=============== TURN 383 ================
+INFO:root:1 wanted to move to 008, 7 but could not because of False fuel and True
 INFO:root:=============== TURN 384 ================
+INFO:root:1 will move to position 008, 7
+INFO:root:{'008, 7'} current status
 INFO:root:=============== TURN 385 ================
+INFO:root:1 will move to position 008, 6
+INFO:root:{'008, 6'} current status
 INFO:root:=============== TURN 386 ================
+INFO:root:1 will move to position 008, 5
+INFO:root:{'008, 5'} current status
 INFO:root:=============== TURN 387 ================
+INFO:root:1 will move to position 008, 4
+INFO:root:{'008, 4'} current status
 INFO:root:=============== TURN 388 ================
+INFO:root:1 will move to position 007, 4
+INFO:root:{'007, 4'} current status
 INFO:root:=============== TURN 389 ================
+INFO:root:1 will move to position 007, 3
+INFO:root:{'007, 3'} current status
 INFO:root:=============== TURN 390 ================
+INFO:root:1 will move to position 007, 2
+INFO:root:{'007, 2'} current status
 INFO:root:=============== TURN 391 ================
+INFO:root:1 will move to position 006, 2
+INFO:root:{'006, 2'} current status
 INFO:root:=============== TURN 392 ================
+INFO:root:1 will move to position 006, 1
+INFO:root:{'006, 1'} current status
 INFO:root:=============== TURN 393 ================
+INFO:root:1 will move to position 006, 0
+INFO:root:{'006, 0'} current status
 INFO:root:=============== TURN 394 ================
+INFO:root:1 will move to position 005, 0
+INFO:root:{'005, 0'} current status
 INFO:root:=============== TURN 395 ================
+INFO:root:1 will move to position 004, 0
+INFO:root:{'004, 0'} current status
 INFO:root:=============== TURN 396 ================
+INFO:root:1 will move to position 003, 0
+INFO:root:{'003, 0'} current status
 INFO:root:=============== TURN 397 ================
+INFO:root:1 will move to position 002, 0
+INFO:root:{'002, 0'} current status
 INFO:root:=============== TURN 398 ================
+INFO:root:1 will move to position 001, 0
+INFO:root:{'001, 0'} current status
 INFO:root:=============== TURN 399 ================
+INFO:root:1 will move to position 000, 0
+INFO:root:{'000, 0'} current status
 INFO:root:=============== TURN 400 ================
+INFO:root:1 will move to position 031, 0
+INFO:root:{'031, 0'} current status
