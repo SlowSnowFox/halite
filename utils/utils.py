@@ -5,6 +5,9 @@ import numpy as np
 import networkx as nx
 from itertools import product
 import logging
+import pickle
+from itertools import product
+import copy
 # TODO if needed replace gmap.naive_navigate with a implementation that prioritizes ships with higher cargo
 
 
@@ -17,6 +20,7 @@ class Navigator:
         self.mpan = mpan
         self.heuristic = heuristic
         self.heuristic.gmap = self.mpan.graph
+        self.state_space = StateSpaceAnalyzer()
 
     def navigate_to(self, source, target):
         if source == target:
@@ -43,8 +47,11 @@ class Navigator:
         pc = PositionConvertible.from_position(ship.position)
         env = self.mpan.get_neighbourgraph(pc)
         graph = self.mpan.path_subgraph(env)
-        # parse graph and build in farming stops
-        return None
+        adjgraph = self.mpan.convert_to_numpy(graph)
+        path = self.state_space.sample_state_tree(adjgraph, 5)
+        # convert the tuples to directions
+        # convert the direction to a pathof pposition and stay stills
+        return path
 
     def eval_environment(self, ship):
         pc = PositionConvertible.from_position(ship.position)
@@ -101,11 +108,82 @@ class MapAnalyzer:
                 surr.add(PositionConvertible.from_position(self.gmap.normalize(pc.position.directional_offset(cell))).node)
         return surr
 
-    def path_subgraph(self, graph):
-        # fill in edges with weights
-        # get top 4 vertices
-        # create a steiner Tree connecting the top 4
+    def convert_to_numpy(self, graph):
         return 1
+
+
+class StateSpaceAnalyzer:
+
+    def reward(self, halite, days):
+        """
+        :param halite: halite on the cell
+        :param days: number of days you are planning on spennding there
+        :return: mined amount subtracted by the leaving cost
+        """
+        return (1.1 * self.mined_t(days) - 0.1) * halite
+
+    @staticmethod
+    def mined_t(t):
+        """
+        :param t: t days spend on cell
+        :return: percentage mined of cell
+        """
+        return 0.25 * np.array([np.power(0.75, x) for x in range(t)]).sum()
+
+    @staticmethod
+    def time_vs_reward(game_turn):
+        return 1
+
+    def sample_state_tree(self, graph, max_depth):
+        # TODO only go back stepwise and not discard already computed results
+        """
+        :param graph: subgraph of the map as numpy matrix to perfom the analysis on
+        :param starting_node: current position of the ship
+        :param starting_halite: amount of halite ship currently has
+        :param max_depth: max depth the function is going to explore
+        :return: best path of farming and navigation to minimize the time needed to aquire threshold
+        """
+        options = [(0, 0), (0, 1), (1, 0), (-1, 0), (0, -1)]
+        acc_halite = 0
+        best = (1000*['o'])
+        for path in product(*(max_depth * [options])):
+            game_state = copy.deepcopy(graph)
+            position = int(graph.size/2), int(graph.size/2)
+            starting_halite = game_state[position[0]][position[1]]
+            for depth, move in enumerate(path):
+                if not self.is_valid(move, game_state, position):
+                    break
+                game_state, reward, position = self.evaluate(move, game_state, position)
+                acc_halite += reward
+                if acc_halite + starting_halite >= 900:
+                    if depth < len(best):
+                        best = path[:depth]
+                    break
+        return best
+
+    @staticmethod
+    def is_valid(move, graph, position):
+        nodes = graph.nodes()
+        min_node = min(nodes, key=lambda x: x.x + x.y)
+        max_node = max(nodes, key=lambda x: x.x + x.y)
+        position = PositionConvertible.from_node(position)
+        position.x += move[0] % max_node.x+1
+        position.y += move[1] % max_node.y+1
+        if min_node.x <= position.x <= max_node.x or min_node.y <= position.y <= max_node.y:
+            return True
+        return False
+
+    @staticmethod
+    def evaluate(move, graph, position):
+        if move == (0, 0):
+            reward = graph[position[0]][position[1]] * 0.25
+            graph[position] *= 0.75
+            return graph, reward, position
+        else:
+            move_cost = graph[position[0]][position][1] * 0.1
+            position.x += move[0] % 1  # mapsize
+            position.y += move[1] % 1
+            return graph, -move_cost, position
 
 
 class PositionConvertible:

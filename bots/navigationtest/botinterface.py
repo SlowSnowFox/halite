@@ -36,7 +36,7 @@ class Bot:
         self.me = self.game.me
         self.game_map = self.game.game_map
         self.hr = Heuristic(HeuristicFunctions.distance_cost_adjusted, self.game_map)
-        self.khr = KernelHeuristic(KernelHeuristicFunctions.absolute_sum, size=0)
+        self.khr = KernelHeuristic(KernelHeuristicFunctions.absolute_sum, size=KERNELSIZE)
         self.mpan = MapAnalyzer(self.game_map, self.khr)
         self.navigator = Navigator(self.game_map, self.me, self.hr, self.mpan)
 
@@ -87,27 +87,29 @@ class Bot:
             return self.create_nav_que(path)
 
     def perform_que_action(self, ship):
-        pc = PositionConvertible.from_position(ship.position)
         task = self.ships[ship.id].pop(0)
         if isinstance(task, NavigationTask):
-            logging.info(str(task))
-            relative_direction = self.get_relative_direction(task.source, task.target)
-            enough_fuel = ship.halite_amount >= self.game_map[ship.position].halite_amount * 0.1  # check if ship can move
-            if enough_fuel:  # request the desired move
-                logging.info(f'{ship.id} will move from {task.source.node} to position {task.target.node}')
-                return PositionRequest(task, ship, ship.move(relative_direction), priority=ship.halite_amount/1000)
-            else:
-                pr = PositionRequest(task, ship, ship.stay_still(), priority=1)
-                self.ships[ship.id].insert(0, pr.convert_stationary())
-                logging.info(f'{ship.id} wanted to move to {task.target.node} but could not because of {enough_fuel} fuel')
-                return pr
-
+            return self.perform_navigation(ship, task)
         elif isinstance(task, FarmingTask):
-            return 2
-        elif isinstance(task, ScannerTask):
-            return 3
+            return self.perform_farming(ship, task)
 
-    def create_nav_que(self, path):
+    def perform_farming(self, ship, task):
+        return PositionRequest(task, ship, ship.stay_still(), priority=1)
+
+    def perform_navigation(self, ship, task):
+        relative_direction = self.get_relative_direction(task.source, task.target)
+        enough_fuel = ship.halite_amount >= self.game_map[ship.position].halite_amount * 0.1  # check if ship can move
+        if enough_fuel:  # request the desired move
+            logging.info(f'{ship.id} will move from {task.source.node} to position {task.target.node}')
+            return PositionRequest(task, ship, ship.move(relative_direction), priority=ship.halite_amount / 1000)
+        else:
+            pr = PositionRequest(task, ship, ship.stay_still(), priority=1)
+            self.ships[ship.id].insert(0, pr.convert_stationary())
+            logging.info(f'{ship.id} wanted to move to {task.target.node} but could not because of {enough_fuel} fuel')
+            return pr
+
+    @staticmethod
+    def create_nav_que(path):
         que = []
         for i in range(1, len(path)):
             current = PositionConvertible.from_node(path[i-1])
@@ -115,8 +117,17 @@ class Bot:
             que.append(NavigationTask(current, nextp))
         return que
 
-    def create_farm_que(self, path):
-        return 2
+    @staticmethod
+    def create_farm_que(path):
+        que = []
+        for i in range(0, len(path)):
+            if path[i] == "dont move":
+                que.append(FarmingTask(path[i]))
+            else:
+                current = PositionConvertible.from_node(path[i-1])
+                nextp = PositionConvertible.from_node(path[i])
+                que.append(NavigationTask(current, nextp))
+        return que
 
     def get_relative_direction(self, source, target):
         # Modified code from hlt package can easily be refacored and condensed if some1 has time
@@ -153,14 +164,6 @@ class PositionRequest:
         self.task.target = self.task.source
         return original_task
 
-class Task:
-
-    def __init__(self):
-        pass
-
-    def next(self):
-        return 1
-
 
 class NavigationTask:
 
@@ -173,7 +176,9 @@ class NavigationTask:
 
 
 class FarmingTask:
-    pass
+
+    def __init__(self, position):
+        self.target = position
 
 
 class KillTask:
@@ -181,9 +186,5 @@ class KillTask:
 
 
 class InfraStrukturTask:
-    pass
-
-
-class ScannerTask:
     pass
 
