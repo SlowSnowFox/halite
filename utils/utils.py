@@ -8,10 +8,16 @@ import logging
 import pickle
 from itertools import product
 import copy
-# TODO if needed replace gmap.naive_navigate with a implementation that prioritizes ships with higher cargo
 
 
 class Navigator:
+    """
+    Always works with a reference of the current ship.
+    Has access to the Map Analyzer and the State space analyzer.
+    Paths returned by this object are already Position Convertibles.
+    First Node of path: start of the navigation
+    End Node of path: end of the navigation
+    """
 
     def __init__(self, gmap, me, heuristic, mpan):
         self.gmap = gmap
@@ -29,6 +35,7 @@ class Navigator:
         end = PositionConvertible.from_position(target)
         logging.info(f"Path Requested from {start.node} to {end.node}")
         path = nx.dijkstra_path(self.mpan.graph, start.node, end.node, self.heuristic)
+        path = [PositionConvertible.from_node(node) for node in path]
         return path
 
     def get_closest_off(self, source, heuristic, elements):
@@ -39,19 +46,20 @@ class Navigator:
                                                                        source=x.node,
                                                                        target=source.node,
                                                                        weight=heuristic))
-            logging.info(f"got best node {target.node}")
             return target
         return None
 
     def farm_environment(self, ship):
         pc = PositionConvertible.from_position(ship.position)
-        env = self.mpan.get_neighbourgraph(pc)
-        graph = self.mpan.path_subgraph(env)
-        adjgraph = self.mpan.convert_to_numpy(graph)
-        path = self.state_space.sample_state_tree(adjgraph, 5)
-        # convert the tuples to directions
-        # convert the direction to a pathof pposition and stay stills
-        return path
+        np_graph = self.mpan.get_np_neighborhod(pc)
+        offset_path = self.state_space.sample_state_tree(np_graph, 5)
+        mapping_dict = {(0, 1): Direction.South, (0, -1): Direction.North, (1, 0): Direction.East, (-1, 0): Direction.West, (0, 0): Direction.Still}
+        dir_path = [mapping_dict[x] for x in offset_path]
+        res_path = []
+        for direction in dir_path:
+                res_path.append(pc)
+                pc = PositionConvertible.from_position(pc.position.directional_offset(direction))
+        return res_path
 
     def eval_environment(self, ship):
         pc = PositionConvertible.from_position(ship.position)
@@ -61,6 +69,9 @@ class Navigator:
 
 
 class MapAnalyzer:
+    """
+    Works internally with a networkx graph as its purpose is to analyze the entire map
+    """
 
     def __init__(self, gamemap, kernelheuristic):
         self.kernelheuristic = kernelheuristic
@@ -108,11 +119,20 @@ class MapAnalyzer:
                 surr.add(PositionConvertible.from_position(self.gmap.normalize(pc.position.directional_offset(cell))).node)
         return surr
 
-    def convert_to_numpy(self, graph):
-        return 1
+    def get_np_neighborhod(self, pc):
+        field_size = self.kernelheuristic.size * 2 + 1
+        np_env = np.zeros((field_size, field_size), dtype=int)
+        for absoffset in range(self.kernelheuristic.size + 1):
+            for cell in product([0, -absoffset, absoffset], [0, -absoffset, absoffset]):
+                a = self.gmap[self.gmap.normalize(pc.position.directional_offset(cell))].halite_amount
+                np_env[cell[1] + absoffset][cell[0] + absoffset] = a
+        return np_env
 
 
 class StateSpaceAnalyzer:
+    """
+    Works internally with a numpy array an is only suitable for highly localized analysis
+    """
 
     def reward(self, halite, days):
         """
@@ -145,7 +165,7 @@ class StateSpaceAnalyzer:
         """
         options = [(0, 0), (0, 1), (1, 0), (-1, 0), (0, -1)]
         acc_halite = 0
-        best = (1000*['o'])
+        best = (1000*[(0, 0)])
         for path in product(*(max_depth * [options])):
             game_state = copy.deepcopy(graph)
             position = int(graph.size/2), int(graph.size/2)

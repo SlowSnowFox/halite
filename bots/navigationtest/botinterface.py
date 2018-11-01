@@ -39,6 +39,7 @@ class Bot:
         self.khr = KernelHeuristic(KernelHeuristicFunctions.absolute_sum, size=KERNELSIZE)
         self.mpan = MapAnalyzer(self.game_map, self.khr)
         self.navigator = Navigator(self.game_map, self.me, self.hr, self.mpan)
+        self.mpan.get_np_neighborhod(PositionConvertible(0, 0))
 
     def resolve_conflicts(self):
         # sort que by priority
@@ -78,7 +79,7 @@ class Bot:
             return self.create_nav_que(path)
         elif self.navigator.eval_environment(ship) > FARMING_THRESHOLD:  # farm surrounding area if its worth it
             path = self.navigator.farm_environment(ship)
-            return self.create_farm_que(path)
+            return self.create_nav_que(path)
         else:  # Move to closest honeyspot
             # self.rand.seed(ship.id)
             # closest_honey_spot = self.rand.choice(self.mpan.honey_spots[:TOPNSPOTS]) # hotfix so that not all of them go the same honeyspot
@@ -90,16 +91,11 @@ class Bot:
         task = self.ships[ship.id].pop(0)
         if isinstance(task, NavigationTask):
             return self.perform_navigation(ship, task)
-        elif isinstance(task, FarmingTask):
-            return self.perform_farming(ship, task)
-
-    def perform_farming(self, ship, task):
-        return PositionRequest(task, ship, ship.stay_still(), priority=1)
 
     def perform_navigation(self, ship, task):
         relative_direction = self.get_relative_direction(task.source, task.target)
         enough_fuel = ship.halite_amount >= self.game_map[ship.position].halite_amount * 0.1  # check if ship can move
-        if enough_fuel:  # request the desired move
+        if enough_fuel and task.source != task.target:  # request the desired move and check that the ship should not farm
             logging.info(f'{ship.id} will move from {task.source.node} to position {task.target.node}')
             return PositionRequest(task, ship, ship.move(relative_direction), priority=ship.halite_amount / 1000)
         else:
@@ -112,21 +108,9 @@ class Bot:
     def create_nav_que(path):
         que = []
         for i in range(1, len(path)):
-            current = PositionConvertible.from_node(path[i-1])
-            nextp = PositionConvertible.from_node(path[i])
+            current = path[i-1]
+            nextp = path[i]
             que.append(NavigationTask(current, nextp))
-        return que
-
-    @staticmethod
-    def create_farm_que(path):
-        que = []
-        for i in range(0, len(path)):
-            if path[i] == "dont move":
-                que.append(FarmingTask(path[i]))
-            else:
-                current = PositionConvertible.from_node(path[i-1])
-                nextp = PositionConvertible.from_node(path[i])
-                que.append(NavigationTask(current, nextp))
         return que
 
     def get_relative_direction(self, source, target):
@@ -175,10 +159,6 @@ class NavigationTask:
         return f'from {self.source.node} to {self.target.node}'
 
 
-class FarmingTask:
-
-    def __init__(self, position):
-        self.target = position
 
 
 class KillTask:
